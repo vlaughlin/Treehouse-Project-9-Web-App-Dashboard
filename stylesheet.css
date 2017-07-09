@@ -1,0 +1,65 @@
+body {
+        margin: 0;
+        padding: 0;
+}
+#menu {
+        position: relative;
+        width: 400px;
+        height: 90px;
+        background-color: #7477bf;
+}
+#menu ul {
+        height: auto;
+        padding: 0px 0px;
+        margin: 0px;
+        list-style-type: none;
+}
+.appname {
+        position: absolute;
+        top: 90%;
+        left: 4%;
+        height: 100px;
+        margin-top: -50px;
+        font-size: 23px;
+}
+.iconbell {
+        position: absolute;
+        top: 90%;
+        right: 40%;
+        height: 100px;
+        margin-top: -50px;
+}
+.userpic {
+        position: absolute;
+        top: 90%;
+        right: 28%;
+        height: 100px;
+        margin-top: -50px;
+}
+.username {
+        position: absolute;
+        top: 90%;
+        right: 3%;
+        height: 100px;
+        margin-top: -50px;
+}
+a:link {
+        /* Applies to all unvisited links */
+        text-decoration: none;
+        color: #fff;
+}
+a:visited {
+        /* Applies to all visited links */
+        text-decoration: none;
+        color: #fff;
+}
+a:hover {
+        /* Applies to links under the pointer */
+        text-decoration: underline;
+        color: #fff;
+}
+a:active {
+        /* Applies to activated links */
+        text-decoration: underline;
+        color: white;
+}
