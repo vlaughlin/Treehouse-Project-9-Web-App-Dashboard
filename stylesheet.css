@@ -2,13 +2,13 @@ body {
         margin: 0;
         padding: 0;
 }
-#menu {
+#header {
         position: relative;
         width: 400px;
-        height: 90px;
+        height: 80px;
         background-color: #7477bf;
 }
-#menu ul {
+#header ul {
         height: auto;
         padding: 0px 0px;
         margin: 0px;
@@ -23,7 +23,7 @@ body {
        font-family: 'Open Sans', sans-serif;
         font-size: 23px;
 }
-.iconbell {
+.bell {
         position: absolute;
         top: 90%;
         right: 40%;
@@ -81,3 +81,18 @@ a:active {
     
 }
 
+#navigation {
+    position: absolute;
+    left:0; top:80px; bottom: 0;
+    width: 55px;
+    background-color: #4d4c72;   
+}
+
+[class^="icon"] {
+  width: 35px;
+  height: 50px;
+  position: relative;
+  top: 10px;
+  margin-left: 8px;
+  
+}
