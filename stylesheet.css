@@ -158,5 +158,12 @@ body{
 }
 
 
-
+.messagebar-default{
+     position: absolute;
+        top: 30%;
+        left: 14%;
+        height: 50px;
+       
+        margin-top: -40px;
+}
 
