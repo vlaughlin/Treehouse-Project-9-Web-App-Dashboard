@@ -8,29 +8,23 @@
         <title>title</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="stylesheet.css" rel="stylesheet" type="text/css">
+        
 </head>
 
 <body>
         <header>
                 <div id="header">
+                        <hr id="hr">
+
+
                         <ul>
                                 <li class="appname">
                                         <a href="#"><strong style="font-size: 100%;">Your</strong>App &#8482;</a>
                                 </li>
 
 
-                                <li>
-                                      <img class="bell" src="icons/icon-bell.svg" style=
-                                "width:25px;height:25px; alt=">
-                                    
-                                  
-                                    
-                                    <img class="userpic" src="icons/35.jpg" style="width:25px;height:25px; alt=">
-                                    
-                                   </li>
-                            
-                            
-                                   <hr id="hr">
+                                <li><img alt="Alert" class="bell" src="icons/icon-bell.svg"> <img alt="User" class="userpic" src="icons/35.jpg"></li>
+
 
                                 <li class="username">
                                         <a href="aboutus.html">Josh Sullivan</a>
@@ -38,20 +32,41 @@
                         </ul>
                 </div>
         </header>
-    
-    <div id="navigation">
-        
-        <img class="icon-dashboard" src="icons/icon-dashboard.svg" alt="Dashboard">
-        
-        
-<img class="icon-members" src="icons/icon-members.svg" alt="Members">
-        
-          <img class="icon-visits" src="icons/icon-visits.svg" alt="Visits">                                                  
-        
-        
-        <img class="icon-settings" src="icons/icon-settings.svg" alt="Settings">
-           
+
+
+        <div id="navigation"><img alt="Dashboard" class="icon-dashboard" src="icons/icon-dashboard.svg"> <img alt="Members" class="icon-members" src="icons/icon-members.svg"> <img alt="Visits" class=
+        "icon-visits" src="icons/icon-visits.svg"> <img alt="Settings" class="icon-settings" src="icons/icon-settings.svg"></div>
+
+
+        <div id="main">
+                <p class="dash">Dashboard</p>
+
+
+                <div class="wrap">
+                        <div class="search">
+                                <input class="searchTerm" placeholder="Search" type="text"> <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                </div>
+
+<div class="messagebar">
+    <div class="container">
+      This is a notification. You can click it away if you want.
+      <button type="button" class="close" data-dismiss="message">&times;</button>
     </div>
+</div>
+                
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+        </script> 
+        
     
+    <link href="dist/jquery.messagebar.min.css" rel="stylesheet">
+    <script src="dist/jquery.messagebar.min.js"></script>
+    
+    <script>
+$(".messagebar").messageBar({
+  slide: false
+});</script>
+
 </body>
 </html>
