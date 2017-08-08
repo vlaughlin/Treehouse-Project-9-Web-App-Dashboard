@@ -7,8 +7,11 @@
 
         <title>title</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="stylesheet.css" rel="stylesheet" type="text/css">
-        <link href="dist/jquery.messagebar.min.css" rel="stylesheet">
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+     <link href="dist/jquery.messagebar.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/toggle-switch.scss" />
+       
 </head>
 
 <body>
@@ -21,26 +24,40 @@
                                 <li class="appname">
                                         <a href="#"><strong style="font-size: 100%;">Your</strong>App &#8482;</a>
                                 </li>
-                            
-                            <li id="noti_Container">
-                <div id="noti_Counter"></div>   <!--SHOW NOTIFICATIONS COUNT.-->
-                
-                <!--A CIRCLE LIKE BUTTON TO DISPLAY NOTIFICATION DROPDOWN.-->
-                <div id="noti_Button"><img alt="User" src="icons/icon-bell.svg"></div>    
 
-                <!--THE NOTIFICAIONS DROPDOWN BOX.-->
-                <div id="notifications">
-                    <h3>Notifications</h3>
-                    <p>-example<br>
-                        -example<br>
-                        -example
-                    </p>
-                    <div style="height:300px;"></div>
-                   
-                    <div class="seeAll"><a href="#">See All</a></div>
-                </div>
-                            
-                                 
+
+                                <li id="noti_Container">
+                                        <div id="noti_Counter">
+                                        </div>
+                                        <!--SHOW NOTIFICATIONS COUNT.-->
+                                        <!--A CIRCLE LIKE BUTTON TO DISPLAY NOTIFICATION DROPDOWN.-->
+
+
+                                        <div id="noti_Button"><img alt="User" src="icons/icon-bell.svg">
+                                        </div>
+                                        <!--THE NOTIFICAIONS DROPDOWN BOX.-->
+
+
+                                        <div id="notifications">
+                                                <h3>Notifications</h3>
+
+
+                                                <p>-example<br>
+                                                -example<br>
+                                                -example</p>
+
+
+                                                <div style="height:300px;">
+                                                </div>
+
+
+                                                <div class="seeAll">
+                                                        <a href="#">See All</a>
+                                                </div>
+                                        </div>
+                                </li>
+
+
                                 <li><img alt="User" class="userpic" src="icons/35.jpg">
                                 </li>
 
@@ -53,8 +70,8 @@
         </header>
 
 
-        <div id="navigation"><img alt="Dashboard" class="icon-dashboard" src="icons/icon-dashboard.svg"><img alt="Members" class="icon-members" src="icons/icon-members.svg"><img alt="Visits" class=
-        "icon-visits" src="icons/icon-visits.svg"><img alt="Settings" class="icon-settings" src="icons/icon-settings.svg">
+        <div id="navigation"><img alt="Dashboard" class="navicon-dashboard" src="icons/icon-dashboard.svg"><img alt="Members" class="navicon-members" src="icons/icon-members.svg"><img alt="Visits" class=
+        "navicon-visits" src="icons/icon-visits.svg"><img alt="Settings" class="navicon-settings" src="icons/icon-settings.svg">
         </div>
 
 
@@ -70,123 +87,309 @@
 
 
                 <div class="messagebar-default">
-                        <div class="container">
-                                This is a notification. You can click it away if you want. <button class="close" data-dismiss="message" type="button">&times;</button>
+                        <div class="message-container">
+                                Welcome to YouApp !!! You have 3 notifications.  :)<button class="close" data-dismiss="message" type="button">&times;</button>
                         </div>
                 </div>
         </div>
 
 
+        <div class="chart-container">
+                <h1 class="traffic">TRAFFIC</h1>
+
+
+                <canvas id="myLineChart">
+                </canvas>
+
+
+                <h1 class="daily">DAILY TRAFFIC</h1>
+
+
+                <canvas id="myChart">
+                </canvas>
+
+
+                <h1 class="mobile">MOBILE USERS</h1>
+
+
+                <canvas id="myDoughnutChart">
+                </canvas>
+        </div>
+
+    <div class="social-container">
+
+        <h1 class="socialstats">SOCIAL STATS</h1>
+        <svg class="twitterbox" height="100" width="250">
+        <rect height="100" style="fill: #f2f2f2; stroke-width:1;stroke:rgb(0,0,0)" width="300"></rect></svg>
+
+        <h1 class="twittername">Twitter</h1>
+
+
+        <h1 class="twitterstats">10,345</h1>
+        <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg class="twitter" fill="#fff" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewbox="0 0 32 32" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
+        "http://www.w3.org/1999/xlink" y="0px">
+        <path d=
+        "M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0 c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5 c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"></path>
+        </svg> <svg class="circle1" height="100" width="100">
+        <circle cx="50" cy="50" fill="#7477bf" r="40" stroke stroke-width></circle></svg> <svg class="facebookbox" height="100" width="250">
+        <rect height="100" style="fill: #f2f2f2; stroke-width:1;stroke:rgb(0,0,0)" width="300"></rect></svg>
+
+        <h1 class="facebookname">Facebook</h1>
+
+
+        <h1 class="facebookstats">8,739</h1>
+        <svg class="facebook" fill="#fff" enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_2" version="1.1" viewbox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns=
+        "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d=
+        "M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029 c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77 L40.43,21.739z"></path>
+        </svg> <svg class="circle2" height="100" width="100">
+        <circle cx="50" cy="50" fill="#7477bf" r="40" stroke stroke-width></circle></svg> <svg class="googlebox" height="100" width="250">
+        <rect height="100" style="fill: #f2f2f2; stroke-width:1;stroke:rgb(0,0,0)" width="300"></rect></svg>
+
+        <h1 class="googlename">Google+</h1>
+
+
+        <h1 class="googlestats">2,530</h1>
+        <svg class="google" fill="#fff" id="Layer_3" style="enable-background:new 0 0 32 32;" version="1.1" viewbox="0 0 32 32" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
+        "http://www.w3.org/1999/xlink" y="0px">
+        <path d=
+        "M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6 c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4 c-0.3-0.2-0.5-0.4-0.6-0.4c-0.2,0-0.5,0-1,0c-0.7,0-1.4,0-2,0.1c-0.7,0.1-1.4,0.2-2.1,0.5c-0.7,0.2-1.3,0.5-1.9,0.9s-1,0.8-1.3,1.4 c-0.3,0.6-0.5,1.3-0.5,2.1c0,0.9,0.2,1.7,0.7,2.3c0.5,0.7,1.1,1.2,1.8,1.6s1.5,0.7,2.3,0.9s1.6,0.3,2.4,0.3c0.8,0,1.5-0.1,2.2-0.2 c0.7-0.2,1.3-0.4,1.9-0.8c0.6-0.3,1.1-0.8,1.4-1.4C17.5,27.2,17.7,26.5,17.7,25.7z M15.4,9.1c0-0.8-0.1-1.6-0.3-2.5 c-0.2-0.9-0.5-1.7-0.9-2.5c-0.4-0.8-0.9-1.5-1.6-2c-0.7-0.5-1.5-0.8-2.3-0.8c-1.2,0-2.1,0.4-2.8,1.3c-0.7,0.9-1,1.9-1,3.2 c0,0.6,0.1,1.2,0.2,1.9c0.1,0.7,0.4,1.3,0.7,2c0.3,0.7,0.7,1.3,1.1,1.8c0.4,0.5,0.9,1,1.5,1.3c0.6,0.3,1.2,0.5,1.9,0.5 c1.2,0,2.1-0.4,2.7-1.2C15.1,11.4,15.4,10.4,15.4,9.1z M12.9,0h8.4l-2.6,1.5h-2.6c0.9,0.6,1.6,1.4,2.1,2.4s0.8,2.1,0.8,3.2 c0,0.9-0.1,1.8-0.4,2.5c-0.3,0.7-0.7,1.3-1.1,1.8c-0.4,0.4-0.8,0.9-1.3,1.2c-0.4,0.4-0.8,0.8-1.1,1.2c-0.3,0.4-0.4,0.8-0.4,1.3 c0,0.3,0.1,0.7,0.3,1c0.2,0.3,0.5,0.6,0.8,0.9c0.3,0.3,0.7,0.6,1.1,0.9c0.4,0.3,0.8,0.7,1.2,1.1c0.4,0.4,0.8,0.8,1.1,1.3 c0.3,0.5,0.6,1,0.8,1.6c0.2,0.6,0.3,1.3,0.3,2c0,2.1-0.9,3.9-2.7,5.4c-1.9,1.7-4.6,2.5-8.1,2.5c-0.8,0-1.5-0.1-2.3-0.2 c-0.8-0.1-1.6-0.3-2.3-0.6c-0.8-0.3-1.5-0.7-2.1-1.1c-0.6-0.4-1.1-1-1.5-1.7C1,27.6,0.8,26.9,0.8,26c0-0.8,0.2-1.6,0.7-2.6 c0.4-0.8,1-1.5,1.8-2.1c0.8-0.6,1.8-1.1,2.8-1.4c1-0.3,2-0.5,3-0.7c0.9-0.1,1.9-0.2,2.9-0.3c-0.8-1.1-1.2-2-1.2-2.9 c0-0.2,0-0.3,0-0.5c0-0.1,0.1-0.3,0.1-0.4c0-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.3,0.1-0.4c-0.5,0.1-1,0.1-1.3,0.1 c-1.9,0-3.5-0.6-4.9-1.9c-1.4-1.3-2-2.8-2-4.7c0-1.8,0.6-3.4,1.8-4.8C6,1.7,7.5,0.8,9.3,0.4C10.5,0.1,11.7,0,12.9,0z M32.8,4.9v2.5 h-4.9v4.9h-2.5V7.4h-4.9V4.9h4.9V0h2.5v4.9H32.8z"></path>
+        </svg> <svg class="circle3" height="100" width="100">
+        <circle cx="50" cy="50" fill="#7477bf" r="40" stroke stroke-width="0"></circle></svg> <!-- Members Data and Activity -->
+</div>
+
+        <div class="flex-container">
+                <!-- New Members -->
+
+
+                <div class="flex-members">
+                        <span class="sub-heading">New Members</span> <!-- Member Entry -->
+
+                        <div class="member-data">
+                                <div class="member-icon"><img alt="Victoria Chambers" class="icon" src="icons/member1.jpg">
+                                </div>
+
+
+                                <div class="contact-info">
+                                        <span class="top-info">Victoria Chambers</span> <span class="bottom-info">victoria.chambers80@example.com</span>
+                                </div>
+
+
+                                <div class="join-date">
+                                        <span>10/15/15</span>
+                                </div>
+                        </div>
+                        <!-- Member Entry -->
+
+                        <div class="member-data">
+                                <div class="member-icon"><img alt="Dale Byrd" class="icon" src="icons/member2.jpg">
+                                </div>
+
+
+                                <div class="contact-info">
+                                        <span class="top-info">Dale Byrd</span> <span class="bottom-info">dale.byrd52@example.com</span>
+                                </div>
+
+
+                                <div class="join-date">
+                                        <span>10/15/15</span>
+                                </div>
+                        </div>
+                        <!-- Member Entry -->
+
+                        <div class="member-data">
+                                <div class="member-icon"><img alt="Dawn Wood" class="icon" src="icons/member3.jpg">
+                                </div>
+
+
+                                <div class="contact-info">
+                                        <span class="top-info">Dawn Wood</span> <span class="bottom-info">dawn.wood16@example.com</span>
+                                </div>
+
+
+                                <div class="join-date">
+                                        <span>10/15/15</span>
+                                </div>
+                        </div>
+                        <!-- Member Entry -->
+
+                        <div class="member-data">
+                                <div class="member-icon"><img alt="Dan Oliver" class="icon" src="icons/member4.jpg">
+                                </div>
+
+
+                                <div class="contact-info">
+                                        <span class="top-info">Dan Oliver</span> <span class="bottom-info">dan.oliver82@example.com</span>
+                                </div>
+
+
+                                <div class="join-date">
+                                        <span>10/15/15</span>
+                                </div>
+                        </div>
+                </div>
+        </div>
+    
+    
+        <!-- RECENT ACTIVITY -->
+
+        <div class="act-flex-container">
+                <h1 class="recentact">RECENT ACTIVITY</h1>
+                <!-- Member Entry -->
+
+                <div class="activity-data">
+                        <div class="member-icon"><img alt="Victoria Chambers" class="icon" src="icons/member1.jpg">
+                        </div>
+                        <span class="top-info">Victoria Chambers commented on YourApp's SEO Tips</span> <span class="act-bottom-info">4 hours ago</span>
+
+                        <div class="activity-arrow">
+                                <span class="arrow">&gt;</span>
+                        </div>
+                </div>
+                <!-- Member Entry -->
+
+                <div class="activity-data">
+                        <div class="member-icon"><img alt="Victoria Chambers" class="icon" src="icons/member2.jpg">
+                        </div>
+                        <span class="top-info">Dale Byrd like the post Facebook's Changes for 2017</span> <span class="act-bottom-info">5 hours ago</span>
+
+                        <div class="activity-arrow">
+                                <span class="arrow">&gt;</span>
+                        </div>
+                </div>
+                <!-- Member Entry -->
+
+                <div class="activity-data">
+                        <div class="member-icon"><img alt="Victoria Chambers" class="icon" src="icons/member3.jpg">
+                        </div>
+                        <span class="top-info">Dawn Wood commented on Facebook's Changes for 2017</span> <span class="act-bottom-info">5 hours ago</span>
+
+                        <div class="activity-arrow">
+                                <span class="arrow">&gt;</span>
+                        </div>
+                </div>
+                <!-- Member Entry -->
+
+                <div class="activity-data">
+                        <div class="member-icon"><img alt="Victoria Chambers" class="icon" src="icons/member4.jpg">
+                        </div>
+                        <span class="top-info">Dan Oliver posted YouApp's SEO Tips</span> <span class="act-bottom-info">1 day ago</span>
+
+                        <div class="activity-arrow">
+                                <span class="arrow">&gt;</span>
+                        </div>
+                </div>
+        </div>
+        
+    <!-- Message User -->
+
+        <h1 class="msguser">MESSAGE USER</h1>
+
+
+        <div class="container">
+                <form action="/action_page.php">
+                        <input id="fname" name="firstname" placeholder="Search for User" type="text"> 
+
+                        <textarea id="subject" name="subject" placeholder="Message for User" style="height:200px"></textarea> <input type="submit" value="Submit">
+                </form>
+        </div>
     
        
-    <div class="chart-container">
+    <!-- SETTINGS -->
     
-        <h1 class="traffic">TRAFFIC</h1>
-        <canvas id="myLineChart"></canvas>
-        
-        <h1 class="daily">DAILY TRAFFIC</h1>
-        
-        <canvas id="myChart"></canvas>
-        
-              <h1 class="mobile">MOBILE USERS</h1>
-        
-        <canvas id="myDoughnutChart"></canvas>
-        
+       <h1 class="settings">SETTINGS</h1>
     
-</div>
+    <div class="email-settings">
     
-    
-     <h1 class="socialstats">SOCIAL STATS</h1>
-    
-    
-    <svg class="twitterbox" width="250" height="100">
-  <rect width="300" height="100" style="fill: #f2f2f2; stroke-width:1;stroke:rgb(0,0,0)" />
-</svg>
-
-<h1 class="twittername">Twitter</h1>
-    <h1 class="twitterstats">10,345</h1>
-    
-
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg class="twitter" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" version="1.1"  xml:space="preserve">
-<path d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
-	c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
-	c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
-	c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7
-	c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"/>
-</svg>
-    
+       <span class="notitoggle">Send E-mail Notifications</span>
+      
+       
+   <div class="input-toggle">           
+<label class="label label-toggle" for="email">
   
+    <input class="input-checkbox" id="email" type="checkbox">
     
-    <svg class="circle1" height="100" width="100">
-  <circle cx="50" cy="50" r="40" stroke="" stroke-width="" fill="#7477bf" />
-</svg>
-    
-    
-    
-    <svg class="facebookbox" width="250" height="100">
-  <rect width="300" height="100" style="fill: #f2f2f2; stroke-width:1;stroke:rgb(0,0,0)" />
-</svg>
+      
+      
+      <span class="input-toggle-handle"></span>
 
-<h1 class="facebookname">Facebook</h1>
-    <h1 class="facebookstats">8,739</h1>
 
+</label>
     
+   </div> 
+    </div>
+    
+      <div class="profile-settings">
+          
+     <span class="profiletoggle">Set Profile to Public</span>
+      <div class="input-toggle">
+    <label class="label label-toggle" for="profile">
 
-  <svg class="facebook" enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_2" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+    <input class="input-checkbox" id="profile" type="checkbox">
     
+      
+      
+      <span class="input-toggle-handle"></span>
+
+
+</label>
+    
+    </div>  
+      </div>
    
-      <svg class="circle2" height="100" width="100">
-  <circle cx="50" cy="50" r="40" stroke="" stroke-width="" fill="#7477bf" />
-</svg>
+    
+    <select name="DropDownTimezone" id="DropDownTimezone">
+      
+         <option value="-13.0">Select TimeZone</option>
+        <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
+      <option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
+      <option value="-10.0">(GMT -10:00) Hawaii</option>
+      <option value="-9.0">(GMT -9:00) Alaska</option>
+      <option value="-8.0">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+      <option value="-7.0">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+      <option value="-6.0">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+      <option value="-5.0">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+      <option value="-4.0">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+      <option value="-3.5">(GMT -3:30) Newfoundland</option>
+      <option value="-3.0">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+      <option value="-2.0">(GMT -2:00) Mid-Atlantic</option>
+      <option value="-1.0">(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+      <option value="0.0">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+      <option value="1.0">(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+      <option value="2.0">(GMT +2:00) Kaliningrad, South Africa</option>
+      <option value="3.0">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+      <option value="3.5">(GMT +3:30) Tehran</option>
+      <option value="4.0">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+      <option value="4.5">(GMT +4:30) Kabul</option>
+      <option value="5.0">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+      <option value="5.5">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+      <option value="5.75">(GMT +5:45) Kathmandu</option>
+      <option value="6.0">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+      <option value="7.0">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+      <option value="8.0">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+      <option value="9.0">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+      <option value="9.5">(GMT +9:30) Adelaide, Darwin</option>
+      <option value="10.0">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+      <option value="11.0">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+      <option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+</select>
+ 
+    
+    <div class="buttons">
+<button class="button button1">SAVE</button>
+<button class="button button2">CANCEL</button>
+    </div>
     
     
-    
-       <svg class="googlebox" width="250" height="100">
-  <rect width="300" height="100" style="fill: #f2f2f2; stroke-width:1;stroke:rgb(0,0,0)" />
-</svg>
-    
-    
-
-<h1 class="googlename">Google+</h1>
-    <h1 class="googlestats">2,530</h1>
-    
-    
-                    <svg class="google"  id="Layer_3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-                <path d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
-                    c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
-                    c-0.3-0.2-0.5-0.4-0.6-0.4c-0.2,0-0.5,0-1,0c-0.7,0-1.4,0-2,0.1c-0.7,0.1-1.4,0.2-2.1,0.5c-0.7,0.2-1.3,0.5-1.9,0.9s-1,0.8-1.3,1.4
-                    c-0.3,0.6-0.5,1.3-0.5,2.1c0,0.9,0.2,1.7,0.7,2.3c0.5,0.7,1.1,1.2,1.8,1.6s1.5,0.7,2.3,0.9s1.6,0.3,2.4,0.3c0.8,0,1.5-0.1,2.2-0.2
-                    c0.7-0.2,1.3-0.4,1.9-0.8c0.6-0.3,1.1-0.8,1.4-1.4C17.5,27.2,17.7,26.5,17.7,25.7z M15.4,9.1c0-0.8-0.1-1.6-0.3-2.5
-                    c-0.2-0.9-0.5-1.7-0.9-2.5c-0.4-0.8-0.9-1.5-1.6-2c-0.7-0.5-1.5-0.8-2.3-0.8c-1.2,0-2.1,0.4-2.8,1.3c-0.7,0.9-1,1.9-1,3.2
-                    c0,0.6,0.1,1.2,0.2,1.9c0.1,0.7,0.4,1.3,0.7,2c0.3,0.7,0.7,1.3,1.1,1.8c0.4,0.5,0.9,1,1.5,1.3c0.6,0.3,1.2,0.5,1.9,0.5
-                    c1.2,0,2.1-0.4,2.7-1.2C15.1,11.4,15.4,10.4,15.4,9.1z M12.9,0h8.4l-2.6,1.5h-2.6c0.9,0.6,1.6,1.4,2.1,2.4s0.8,2.1,0.8,3.2
-                    c0,0.9-0.1,1.8-0.4,2.5c-0.3,0.7-0.7,1.3-1.1,1.8c-0.4,0.4-0.8,0.9-1.3,1.2c-0.4,0.4-0.8,0.8-1.1,1.2c-0.3,0.4-0.4,0.8-0.4,1.3
-                    c0,0.3,0.1,0.7,0.3,1c0.2,0.3,0.5,0.6,0.8,0.9c0.3,0.3,0.7,0.6,1.1,0.9c0.4,0.3,0.8,0.7,1.2,1.1c0.4,0.4,0.8,0.8,1.1,1.3
-                    c0.3,0.5,0.6,1,0.8,1.6c0.2,0.6,0.3,1.3,0.3,2c0,2.1-0.9,3.9-2.7,5.4c-1.9,1.7-4.6,2.5-8.1,2.5c-0.8,0-1.5-0.1-2.3-0.2
-                    c-0.8-0.1-1.6-0.3-2.3-0.6c-0.8-0.3-1.5-0.7-2.1-1.1c-0.6-0.4-1.1-1-1.5-1.7C1,27.6,0.8,26.9,0.8,26c0-0.8,0.2-1.6,0.7-2.6
-                    c0.4-0.8,1-1.5,1.8-2.1c0.8-0.6,1.8-1.1,2.8-1.4c1-0.3,2-0.5,3-0.7c0.9-0.1,1.9-0.2,2.9-0.3c-0.8-1.1-1.2-2-1.2-2.9
-                    c0-0.2,0-0.3,0-0.5c0-0.1,0.1-0.3,0.1-0.4c0-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.3,0.1-0.4c-0.5,0.1-1,0.1-1.3,0.1
-                    c-1.9,0-3.5-0.6-4.9-1.9c-1.4-1.3-2-2.8-2-4.7c0-1.8,0.6-3.4,1.8-4.8C6,1.7,7.5,0.8,9.3,0.4C10.5,0.1,11.7,0,12.9,0z M32.8,4.9v2.5
-                    h-4.9v4.9h-2.5V7.4h-4.9V4.9h4.9V0h2.5v4.9H32.8z"/>
-                </svg>
-   
-    <svg class="circle3" height="100" width="100">
-  <circle cx="50" cy="50" r="40" stroke="" stroke-width="0" fill="#7477bf" />
-</svg>
-    
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js">
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js">
+        </script> 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">
-        </script>
+        </script> 
         <script src="dist/chart.js" type="text/javascript">
-        </script>
+        </script> 
         <script src="dist/jquery.messagebar.min.js">
-        </script>
+        </script> 
         <script>
         $(".messagebar-default").messageBar( {
         slide: false
