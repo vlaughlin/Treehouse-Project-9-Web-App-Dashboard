@@ -51,16 +51,16 @@ var myLineChart = new Chart(ctx, {
                 datasets: [{
                         label: '# of Votes',
                         data: [550, 1050, 900, 1500, 2000, 1500, 1800, 1110,1160,2050,2200],
-                        backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)',
-                                'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'
+                        backgroundColor: ['#7477bf'
                         ],
-                        borderColor: ['rgba(255,99,132,1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)',
-                                'rgba(255, 159, 64, 1)'
+                        borderColor: ['black'
                         ],
                         borderWidth: 1
                 }]
         },
         options: {
+            
+         
                 scales: {
                         yAxes: [{
                                 ticks: {
@@ -78,16 +78,18 @@ var myChart = new Chart(ctx, {
                 datasets: [{
                         label: '# of Votes',
                         data: [100, 40, 250, 150, 160, 100, 60],
-                        backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)',
-                                'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'
+                        backgroundColor: ['rgb(116, 119, 191)', 'rgb(116, 119, 191)', 'rgb(116, 119, 191)', 'rgb(116, 119, 191)',
+                                'rgb(116, 119, 191)', 'rgb(116, 119, 191)'
                         ],
-                        borderColor: ['rgba(255,99,132,1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)',
-                                'rgba(255, 159, 64, 1)'
+                        borderColor: ['rgb(0, 0, 0)', 'rgb(0, 0, 0)', 'rgb(0, 0, 0)', 'rgb(0, 0, 0)', 'rgb(0, 0, 0)',
+                                'rgb(0, 0, 0)'
                         ],
                         borderWidth: 1
                 }]
         },
         options: {
+              
+            
                 scales: {
                         yAxes: [{
                                 ticks: {
@@ -108,18 +110,18 @@ var myDoughnutChart = new Chart(ctx, {
                 label: "TeamB Score",
                 data: [50,20,30],
                 backgroundColor: [
-                    "#FAEBD7",
+                    "#7477bf",
                     "#DCDCDC",
-                    "#E9967A",
-                    "#F5DEB3",
-                    "#9ACD32"
+                    "#90ee90",
+                    
+                    
                 ],
                 borderColor: [
-                    "#E9DAC6",
-                    "#CBCBCB",
-                    "#D88569",
-                    "#E4CDA2",
-                    "#89BC21"
+                    "#000",
+                    "#000",
+                    "#000",
+                   
+                   
                 ],
                 borderWidth: [1, 1, 1, 1, 1]
         
