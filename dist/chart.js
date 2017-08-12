@@ -1,4 +1,4 @@
- $(document).ready(function () {
+$(document).ready(function () {
 
         // ANIMATEDLY DISPLAY THE NOTIFICATION COUNTER.
         $('#noti_Counter')
@@ -143,5 +143,3 @@ var myDoughnutChart = new Chart(ctx, {
         }
 
 });
-
-   
