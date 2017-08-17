@@ -862,7 +862,7 @@
 	                top: 800px;
 	        }
 	        #myDoughnutChart {
-	                max-height: 95vh;
+	                max-height: 45vh;
 	                max-width: 30vw;
 	                left: 640px;
 	                top: 830px;
@@ -877,7 +877,69 @@
 	        }
 	        .twitter-widget {
 	                position: absolute;
-	                left: -445px;
-	                bottom: 50px;
+	                left: -389px;
+	                top: 99px;
+	        }
+	        .facebook-widget {
+	                position: absolute;
+	                right: 90px;
+	                top: -9px;
+	        }
+	        .google-widget {
+	                position: absolute;
+	                right: -200px;
+	                top: -120px;
+	        }
+	        .flex-container {
+	                top: 230%;
+	                left: 17%;
+	                width: 26%;
+	        }
+	        .bottom-info {
+	                padding: 200px;
+	                margin: -200px;
+	        }
+	        .act-flex-container {
+	                top: 236%;
+	                left: 60%;
+	        }
+	        .top-info {
+	                width: 10%;
+	        }
+	        .container {
+	                top: 300%;
+	                left: 10%;
+	                width: 40%;
+	        }
+	        .act-flex-container .activity-data {
+	                margin-bottom: 24px;
+	        }
+	        .msguser {
+	                bottom: -1150px;
+	                left: -195px;
+	                width: 400px;
+	        }
+	        #btn-submit {
+	                width: 410px;
+	                margin-left: -1px;
+	        }
+	        .settings-container {
+	                position: absolute;
+	                top: -490px;
+	                right: 490px;
+	                width: 100px;
+	        }
+	        .notitoggle {
+	                width: 200px;
+	        }
+	        .input-toggle {
+	                top: 2291px;
+	        }
+	        .buttons {
+	                width: 200px;
+	                left: 30px;
+	        }
+	        .arrow {
+	                margin-left: 50px;
 	        }
 	}
