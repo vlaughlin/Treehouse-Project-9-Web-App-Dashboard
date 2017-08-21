@@ -191,7 +191,7 @@
 	        color: gray;
 	        font-size: 15px;
 	        position: absolute;
-	        top: 140px;
+	        top: 135px;
 	        margin-left: 10px;
 	}
 	body {
@@ -202,7 +202,7 @@
 	        float: left;
 	        width: 100%;
 	        border: 3px solid #7477bf;
-	        padding: 5px;
+            padding: 5px;
 	        height: 10px;
 	        border-radius: 5px;
 	        outline: none;
@@ -212,10 +212,10 @@
 	}
 	.searchButton {
 	        position: absolute;
-	        right: -50px;
+	        right: -40px;
 	        width: 26px;
 	        height: 24px;
-	        top: 1px;
+	        top: 7px;
 	        border: 1px solid #7477bf;
 	        background: #7477bf;
 	        background: url(../icons/lupa.svg) no-repeat;
@@ -247,42 +247,45 @@
 	        color: #fff;
 	        font-size: 12px;
 	}
-	#myChart {
-	        position: relative;
-	        height: 90vh;
-	        width: 85vw;
-	        right: -10px;
-	        top: 299px;
-	        margin: 0px;
-	        padding: 0;
-	}
+
 	#myLineChart {
 	        position: relative;
-	        max-height: 85vh;
-	        max-width: 95vw;
+	        max-height: 40vh;
+	        max-width: 96vw;
 	        right: -10px;
 	        top: 210px;
 	        margin: 0px;
 	        padding: 0;
 	}
+
+	#myChart {
+	        position: relative;
+	        height: 90vh;
+	        width: 85vw;
+	        right: -10px;
+	        top: 239px;
+	        margin: 0px;
+	        padding: 0;
+	}
+
 	#myDoughnutChart {
 	        position: absolute;
-	        top: 770px;
+	        top: 699px;
 	        left: 40px;
-	        height: 45vh;
-	        width: 80vw;
+	        max-height: 50vh;
+	        max-width:  80vw;
 	}
 	.socialstats {
 	        font-size: 13px;
 	        position: absolute;
-	        top: 1067px;
+	        top: 962px;
 	        margin-left: 30px;
 	        width: 100px;
 	}
 	.social-container {
 	        position: absolute;
 	        top: 80px;
-	        right: 370px;
+	        right: 360px;
 	}
 	.twitter {
 	        width: 40px;
@@ -374,21 +377,60 @@
 	        top: 240px;
 	        margin-left: 30px;
 	}
+
+
+.traffic-navigation {
+    position: absolute;
+    display: flex;
+    
+    top: 270px;
+     margin-left: 60px;
+    
+  justify-content: space-between;
+  width: 66%;
+  margin-bottom: 2em;
+    list-style: none;}
+    
+
+
+
+ul.traffic-navigation li a {
+  
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 12px;
+     color: black;
+  
+	}
+
+
+
+
+
+
+ .active {
+	background: #90ee90;
+    color:white;
+	border-radius: 10px;
+}
+
+
 	.daily {
 	        font-size: 13px;
 	        position: absolute;
-	        top: 480px;
+	        top: 450px;
 	        margin-left: 30px;
 	}
 	.mobile {
 	        font-size: 13px;
 	        position: absolute;
-	        top: 720px;
+	        top: 650px;
 	        margin-left: 30px;
 	}
 	.social-container {
 	        position: absolute;
-	        bottom: 195px;
+	        bottom: 250px;
 	}
 	.circle1 {
 	        position: absolute;
@@ -407,12 +449,12 @@
 	}
 	.sub-heading {
 	        position: absolute;
-	        top: -40px;
-	        left: 50px;
+	        top: -30px;
+	        left: 40px;
 	}
 	.flex-container {
 	        position: absolute;
-	        top: 280%;
+	        top: 290%;
 	        left: 20%;
 	}
 	.member-data {
@@ -426,15 +468,14 @@
 	}
 	.member-icon {
 	        position: absolute;
-	        height: 20px;
-	        width: 20px;
+	        
 	        left: -60px;
 	        border-radius: 50%;
 	}
 	.icon {
 	        border-radius: 100%;
-	        width: 45px;
-	        height: 45px;
+	        width: 40px;
+	        height: 40px;
 	}
 	input[type=text], select, textarea {
 	        width: 100%;
@@ -446,7 +487,10 @@
 	        margin-bottom: 16px;
 	        resize: vertical;
 	}
-	#btn-submit {
+
+
+
+#send {
 	        background-color: #7477bf;
 	        color: white;
 	        padding: 12px 21px;
@@ -455,33 +499,48 @@
 	        cursor: pointer;
 	        margin: 20px;
 	}
-	#error_message {
-	        background: #F3A6A6;
-	}
-	#success_message {
-	        background: #CCF5CC;
-	}
-	#btn-submit:hover {
+#send:focus {
+        outline: none;
+}
+.input-control {
+        padding: 10px;
+        width: 100%;
+}
+.input-group {
+        margin-top: 10px;
+}
+#error_message {
+        color: white;
+        background: #7477bf;
+}
+#success_message {
+        background: #CCF5CC;
+}
+
+
+	
+
+	#send:hover {
 	        background-color: #4CAF50;
 	}
 	.container {
 	        border-radius: 5px;
 	        padding: 20px;
 	        position: absolute;
-	        bottom: -1950px;
-	        left: 50px;
+	        bottom: -1730px;
+	        left: 10px;
 	}
 	.msguser {
-	        font-size: 13px;
+	        font-size: 16px;
 	        position: absolute;
-	        bottom: -1579px;
+	        bottom: -1430px;
 	        margin-left: 100px;
 	}
 	.recentact {
-	        font-size: 13px;
+	        font-size: 16px;
 	        position: absolute;
 	        top: -50px;
-	        margin-left: 70px;
+	        margin-left: 40px;
 	}
 	.member-act {
 	        position: absolute;
@@ -490,16 +549,16 @@
 	}
 	.act-flex-container {
 	        position: absolute;
-	        top: 330%;
+            top: 350%;
 	        left: 20%;
 	        width: 240px;
 	}
 	.top-info {
-	        font-size: 15px;
+	        font-size: 12px;
 	}
 	.act-bottom-info {
 	        display: block;
-	        font-size: 10px;
+	        font-size: 8px;
 	}
 	.act-flex-container .activity-data {
 	        width: 100%;
@@ -514,29 +573,30 @@
 	        color: #7477bf;
 	}
 	.settings {
-	        font-size: 13px;
+	        font-size: 16px;
 	        position: absolute;
-	        bottom: -1999px;
+	        bottom: -1799px;
 	        margin-left: 120px;
 	}
 	.notitoggle {
 	        font-size: 13px;
 	        position: absolute;
-	        bottom: -2070px;
+	        bottom: -1880px;
 	        margin-left: 20px;
 	}
 	.profiletoggle {
 	        font-size: 13px;
 	        position: absolute;
-	        bottom: -2199px;
+	        bottom: -2000px;
 	        margin-left: 20px;
 	}
 	.input-toggle {
 	        position: relative;
 	        display: inline-block;
 	        vertical-align: middle;
-	        bottom: -2210px;
+	        bottom: -1950px;
 	        margin-left: 200px;
+            margin-top:50px;
 	}
 	.profile-settings {
 	        position: absolute;
@@ -599,14 +659,14 @@
 	}
 	#DropDownTimezone {
 	        position: absolute;
-	        bottom: -2250px;
+	        bottom: -2060px;
 	        margin-left: 60px;
 	        width: 200px;
 	}
 	.buttons {
 	        position: absolute;
-	        bottom: -2299px;
-	        margin-left: 70px;
+	        bottom: -2110px;
+	        margin-left: 90px;
 	}
 	.button1 {
 	        background-color: #7477bf;
@@ -919,13 +979,13 @@
 	                left: -195px;
 	                width: 400px;
 	        }
-	        #btn-submit {
+	        #send {
 	                width: 410px;
 	                margin-left: -1px;
 	        }
 	        .settings-container {
 	                position: absolute;
-	                top: -490px;
+	                bottom: 600px;
 	                right: 490px;
 	                width: 100px;
 	        }

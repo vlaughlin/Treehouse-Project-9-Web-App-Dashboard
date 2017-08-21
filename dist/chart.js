@@ -1,3 +1,5 @@
+ 
+
 $(document).ready(function () {
 
         // ANIMATEDLY DISPLAY THE NOTIFICATION COUNTER.
@@ -51,9 +53,9 @@ var myLineChart = new Chart(ctx, {
                 datasets: [{
                         label: '# of Votes',
                         data: [550, 1050, 900, 1500, 2000, 1500, 1800, 1110,1160,2050,2200],
-                        backgroundColor: ['#7477bf'
+                        backgroundColor: ['#f1f1fa'
                         ],
-                        borderColor: ['black'
+                        borderColor: ['#7477bf'
                         ],
                         borderWidth: 1
                 }]
