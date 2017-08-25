@@ -51,7 +51,7 @@ var myLineChart = new Chart(ctx, {
         data: {
                 labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
                 datasets: [{
-                        label: '# of Votes',
+                        label: 'traffic',
                         data: [550, 1050, 900, 1500, 2000, 1500, 1800, 1110,1160,2050,2200],
                         backgroundColor: ['#f1f1fa'
                         ],
@@ -78,7 +78,7 @@ var myChart = new Chart(ctx, {
         data: {
                 labels: ["S", "M", "W", "T", "F", "S"],
                 datasets: [{
-                        label: '# of Votes',
+                        label: 'daily traffic',
                         data: [100, 40, 250, 150, 160, 100, 60],
                         backgroundColor: ['rgb(116, 119, 191)', 'rgb(116, 119, 191)', 'rgb(116, 119, 191)', 'rgb(116, 119, 191)',
                                 'rgb(116, 119, 191)', 'rgb(116, 119, 191)'
@@ -109,7 +109,7 @@ var myDoughnutChart = new Chart(ctx, {
         labels: ["Phones", "Tablets", "Desktop"],
         
         datasets: [{
-                label: "TeamB Score",
+                label: "",
                 data: [50,20,30],
                 backgroundColor: [
                     "#7477bf",
