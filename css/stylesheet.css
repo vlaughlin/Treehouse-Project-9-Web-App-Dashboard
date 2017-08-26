@@ -7,7 +7,10 @@ body {
 body {
         background: #fff;
         font-family: 'Open Sans', sans-serif;
-}
+      }
+
+* { border: 1px solid red; }
+
 #header {
         position: relative;
         width: 320px;
@@ -291,7 +294,8 @@ a:active {
         position: absolute;
         display: flex;
         top: 250px;
-        left:-10px;
+        right: 130px;
+        width: 2%;
         justify-content: space-between;
         margin-right: 2em;
         list-style: none;
@@ -304,7 +308,7 @@ ul.traffic-navigation li a {
         font-size: 10px;
         color: black;
         margin:5px;
-    
+      
         
         
         
@@ -662,7 +666,7 @@ input[type=text], select, textarea {
 .buttons {
         position: absolute;
         bottom: -2110px;
-        margin-left: 90px;
+        width:145px;
 }
 .button1 {
         background-color: #7477bf;
@@ -688,7 +692,7 @@ input[type=text], select, textarea {
 
 .main-footer {
         text-align: center;
-        background: #4d4c72;
+        background: #6266bf;
         padding: 10% 0;
         margin-top: 2250px;
 }
@@ -874,7 +878,7 @@ input[type=text], select, textarea {
         }
 }
 .traffic-navigation {
-        margin-left: 500px;
+        right: 190px;
         width: 2%;
 }
 
@@ -924,7 +928,7 @@ input[type=text], select, textarea {
                 top: 80px;
                 bottom: 0px;
                 width: 80px;
-                height: 2000px;
+                height: 2040px;
         }
         [class^="navicon"] {
                 width: 35px;
@@ -1056,8 +1060,10 @@ input[type=text], select, textarea {
                 top: 3291px;
         }
         .buttons {
-                width: 800px;
-                left: -2px;
+                left: 278px;
+                margin:0;
+                 
+              
         }
         .arrow {
                 margin-left: 50px;
@@ -1066,4 +1072,10 @@ input[type=text], select, textarea {
                 margin-left: -0px;
                 width: 26%;
         }
+    
+    .main-footer {
+				padding: 5% 0;
+				margin-top: 1400px;
+    
+			}
 }
