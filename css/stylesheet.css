@@ -290,19 +290,25 @@ a:active {
 .traffic-navigation {
         position: absolute;
         display: flex;
-        top: 270px;
-        margin-left: 60px;
+        top: 250px;
+        left:-10px;
         justify-content: space-between;
-        width: 66%;
-        margin-bottom: 2em;
+        margin-right: 2em;
         list-style: none;
 }
 ul.traffic-navigation li a {
+       
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        font-size: 12px;
+        font-size: 10px;
         color: black;
+        margin:5px;
+    
+        
+        
+        
+    
 }
 .active {
         background: #90ee90;
@@ -678,6 +684,17 @@ input[type=text], select, textarea {
         background-color: gray;
         color: white;
 }
+
+
+.main-footer {
+        text-align: center;
+        background: #4d4c72;
+        padding: 10% 0;
+        margin-top: 2250px;
+}
+
+
+
 @media (min-width: 768px) {
         #navigation {
                 width: 768px;
@@ -860,12 +877,7 @@ input[type=text], select, textarea {
         margin-left: 110px;
         width: 2%;
 }
-.main-footer {
-        text-align: center;
-        background: #CDCDCD;
-        padding: 1.5% 0;
-        margin-top: 900px;
-}
+
 @media (min-width: 1024px) {
         #header {
                 width: 1024px;
