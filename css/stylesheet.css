@@ -836,7 +836,8 @@ input[type=text], select, textarea {
         }
         .container {
                 bottom: -2060px;
-                left: 150px;
+                width:500px;
+                left:100px;
         }
         .settings {
                 bottom: -2150px;
@@ -845,14 +846,14 @@ input[type=text], select, textarea {
         .notitoggle {
                 font-size: 13px;
                 position: absolute;
-                bottom: -2200px;
+                bottom: -2190px;
                 margin-left: 200px;
         }
         .profiletoggle {
                 font-size: 13px;
                 width: 120px;
                 position: absolute;
-                bottom: -2300px;
+                bottom: -2295px;
                 margin-left: 200px;
         }
         .input-toggle {
@@ -873,13 +874,15 @@ input[type=text], select, textarea {
                 width: 270px;
         }
         #send {
-                margin-left: 50px;
-                width: 270px;
+                margin-left: 80px;
+                width: 300px;
         }
         .buttons {
                 position: absolute;
-                bottom: -2400px;
+                bottom: -2380px;
+               
                 margin-left: 290px;
+               width:200px;
         }
 }
 .traffic-navigation {
@@ -934,7 +937,7 @@ input[type=text], select, textarea {
         #navigation {
                 position: absolute;
                 left: 0;
-                top: 80px;
+                top: 89px;
                 bottom: 0px;
                 width: 80px;
                 height: 2040px;
