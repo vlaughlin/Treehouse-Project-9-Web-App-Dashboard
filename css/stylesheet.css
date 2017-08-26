@@ -874,9 +874,16 @@ input[type=text], select, textarea {
         }
 }
 .traffic-navigation {
-        margin-left: 110px;
+        margin-left: 500px;
         width: 2%;
 }
+
+
+.main-footer {
+				padding: 5% 0;
+				margin-top: 2700px;
+    
+			}
 
 @media (min-width: 1024px) {
         #header {
@@ -1055,8 +1062,8 @@ input[type=text], select, textarea {
         .arrow {
                 margin-left: 50px;
         }
-        .traffic-navigation {
-                margin-left: 630px;
+        .traffic-navigation ul {
+                margin-left: -0px;
                 width: 26%;
         }
 }
