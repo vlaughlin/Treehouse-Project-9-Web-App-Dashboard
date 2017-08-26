@@ -531,7 +531,7 @@ input[type=text], select, textarea {
         border-radius: 5px;
         padding: 20px;
         position: relative;
-        bottom: -1760px;
+        bottom: -1660px;
         left: 10px;
         
 }
@@ -544,7 +544,7 @@ input[type=text], select, textarea {
 .recentact {
         font-size: 16px;
         position: absolute;
-        top: -50px;
+        top: -30px;
         margin-left: 40px;
 }
 .member-act {
@@ -554,7 +554,7 @@ input[type=text], select, textarea {
 }
 .act-flex-container {
         position: absolute;
-        top: 20%;
+        top: 1800px;
         left: 20%;
         width: 240px;
 }
@@ -580,7 +580,7 @@ input[type=text], select, textarea {
 .settings {
         font-size: 16px;
         position: absolute;
-        bottom: -1799px;
+        bottom: -1840px;
         margin-left: 120px;
 }
 .notitoggle {
@@ -594,14 +594,14 @@ input[type=text], select, textarea {
         position: absolute;
         bottom: -2000px;
         margin-left: 20px;
+        width:118px;
 }
 .input-toggle {
-        position: relative;
-        display: inline-block;
-        vertical-align: middle;
-        bottom: -2020px;
-        margin-left: 200px;
-        margin-top: 10px;
+            position: absolute;
+                display: inline-block;
+                vertical-align: middle;
+                bottom: -1970px;
+                margin-left: 200px;
 }
 .profile-settings {
         position: absolute;
@@ -669,10 +669,21 @@ input[type=text], select, textarea {
         width: 200px;
 }
 .buttons {
-        position: absolute;
-        bottom: -2110px;
-        width:145px;
+       position: absolute;
+        bottom: -2100px;
+        width:150px;
+         margin-left: -900px;
+        
+        
 }
+
+
+               
+             
+
+
+
+
 .button1 {
         background-color: #7477bf;
         color: white;
@@ -694,12 +705,7 @@ input[type=text], select, textarea {
         color: white;
 }
 
-.main-footer {
-        text-align: center;
-        background: #6266bf;
-        padding: 10% 0;
-        
-}
+
 
 
 
@@ -878,7 +884,7 @@ input[type=text], select, textarea {
                 width: 300px;
         }
         .buttons {
-                position: absolute;
+               
                 bottom: -2380px;
                
                 margin-left: 290px;
@@ -891,19 +897,12 @@ input[type=text], select, textarea {
 }
 
 
-.main-footer {
-				padding: 5% 0;
-				margin-top: 2700px;
-    
-			}
-
 @media (min-width: 1024px) {
         #header {
                 width: 1024px;
         }
         .username {
                 left: 890px;
-                font-size: px;
                 top: 75px;
                 width:10%
                 
@@ -1091,6 +1090,5 @@ input[type=text], select, textarea {
                 margin-left: -0px;
                 width: 26%;
         }
+
     
-   
-}
