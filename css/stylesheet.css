@@ -3,6 +3,7 @@
 body {
         margin: 0;
         padding: 0;
+     
 }
 body {
         background: #fff;
@@ -461,6 +462,8 @@ h1 {
         position: absolute;
         top: 270%;
         left: 20%;
+    
+        
 }
 .member-data {
         display: inline-flex;
@@ -497,7 +500,8 @@ input[type=text], select, textarea {
 #send {
         background-color: #7477bf;
         color: white;
-        padding: 12px 21px;
+        padding: 12px;
+        margin:0;
         border: none;
         border-radius: 4px;
         cursor: pointer;
@@ -526,15 +530,16 @@ input[type=text], select, textarea {
 .container {
         border-radius: 5px;
         padding: 20px;
-        position: absolute;
+        position: relative;
         bottom: -1760px;
         left: 10px;
+        
 }
 .msguser {
         font-size: 16px;
         position: absolute;
         bottom: -1480px;
-        margin-left: 100px;
+        margin-left: 19px;
 }
 .recentact {
         font-size: 16px;
@@ -549,7 +554,7 @@ input[type=text], select, textarea {
 }
 .act-flex-container {
         position: absolute;
-        top: 320%;
+        top: 20%;
         left: 20%;
         width: 240px;
 }
@@ -623,7 +628,7 @@ input[type=text], select, textarea {
         content: "";
         position: absolute;
         z-index: 1;
-        top: 6px;
+        top: 25px;
         left: 8px;
         width: 32px;
         height: 32px;
@@ -689,13 +694,13 @@ input[type=text], select, textarea {
         color: white;
 }
 
-
 .main-footer {
         text-align: center;
         background: #6266bf;
         padding: 10% 0;
-        margin-top: 2250px;
+        
 }
+
 
 
 
@@ -895,8 +900,12 @@ input[type=text], select, textarea {
         }
         .username {
                 left: 890px;
-                font-size: 17px;
-                margin-top: -49px;
+                font-size: px;
+                top: 75px;
+                width:10%
+                
+               
+                
         }
         .userpic {
                 left: 840px;
@@ -945,7 +954,7 @@ input[type=text], select, textarea {
         }
         /*Resize the wrap to see the search bar change!*/
         .wrap {
-                top: 110px;
+                top: 120px;
                 left: 79%;
         }
         .messagebar-default {
@@ -1007,58 +1016,65 @@ input[type=text], select, textarea {
                 top: -120px;
         }
         .flex-container {
-                top: 157%;
+                top: 100%;
                 left: 17%;
-                width: 26%;
+                width: 31%;
+                
         }
-        .member-data {
-                width: 320px;
-                margin-top: 25px;
-                padding-bottom: 2px;
-        }
+ 
+    
+    
         .bottom-info {
-                padding: 200px;
-                margin: -200px;
+                padding: 0 18%;
+                
         }
         .act-flex-container {
-                top: 160%;
+                top: 100%;
                 left: 60%;
         }
+    
+    .recentact {
+    
+        top: -30px;
+        ;
+}
+    
         .top-info {
                 width: 10%;
         }
         .join-date {
-                margin-right: 69px;
+                margin-right: 10px;
         }
         .container {
-                top: 200%;
+                top: 890px;
                 left: 10%;
                 width: 35%;
         }
         .act-flex-container .activity-data {
-                margin-bottom: 20px;
+                margin-bottom: 1px;
+            
         }
         .msguser {
-                bottom: -870px;
+                bottom: -250px;
                 left: -150px;
-                width: 400px;
+                width: 105px;
         }
         #send {
                 width: 360px;
                 margin-left: -1px;
         }
         .settings-container {
-                position: absolute;
-                top: -428px;
-                right: 490px;
-                width: 100px;
+             position: relative;
+	                top: -1586px;
+	                right: -400px;
+	                width: 100px;
+	        }
+
         }
         .notitoggle {
                 width: 200px;
         }
-        .input-toggle input {
-                top: 3291px;
-        }
+     
         .buttons {
                 left: 278px;
                 margin:0;
@@ -1073,9 +1089,5 @@ input[type=text], select, textarea {
                 width: 26%;
         }
     
-    .main-footer {
-				padding: 5% 0;
-				margin-top: 1400px;
-    
-			}
+   
 }
