@@ -8,9 +8,7 @@ body {
         background: #fff;
         font-family: 'Open Sans', sans-serif;
 }
-* {
-        border: 1px solid red;
-}
+
 #header {
         position: relative;
         width: 320px;
