@@ -1,1094 +1,1120 @@
-    /*HEADER*/
-    
-    * {
-        border: 1px solid red;
-    }
-    
-    body {
-        margin: 0;
-        padding: 0;
-        background: #fff;
-    }
-    
-    li {
-        list-style: none;
-    }
-    
-    .header-flex {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-        height: 70px;
-        width: 100%;
-        text-align: center;
-        justify-content: space-around;
-        background-color: #7477bf;
-    }
-    
-    header-flex-items {
-        position: absolute;
-    }
-    
+/*HEADER*/
+
+* {
+    border: 1px solid red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.header-flex {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #7477bf;
+}
+
+header-flex-items {
+    position: absolute;
+}
+
+.appname {
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    font-size: 20px;
+}
+
+.userpic {
+    position: absolute;
+    top: 90%;
+    left: 250px;
+    margin-top: -40px;
+    border-radius: 50%;
+    width: 25px;
+}
+
+.username {
+    position: absolute;
+    top: 35%;
+    left: 280px;
+}
+
+#hr {
+    border-color: #6266bf;
+    -webkit-transform: rotate(90deg);
+    position: absolute;
+    width: 50px;
+    left: 108px;
+    top: 25%;
+    margin-bottom: -1px;
+    margin-left: 60px;
+}
+
+#noti_Button {
+    position: absolute;
+    top: 20px;
+    right: 151px;
+    height: 100px;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* THE POPULAR RED NOTIFICATIONS COUNTER. */
+
+#noti_Counter {
+    display: block;
+    position: absolute;
+    background: lightgreen;
+    color: #FFF;
+    top: 26px;
+    left: 140px;
+    padding: 3px 3px;
+    margin: -6px 0 0 90px;
+    border-radius: 50%;
+    -moz-border-radius: 50%x;
+    -webkit-border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
+
+#notifications {
+    display: none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 60px;
+    left: 134px;
+    background: #FFF;
+    border: solid 1px rgba(100, 100, 100, .20);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .20);
+    z-index: 1;
+}
+
+
+/* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
+
+#notifications:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    color: transparent;
+    border: 10px solid #CCC;
+    border-color: transparent transparent #FFF;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+h3 {
+    display: block;
+    color: #333;
+    background: #FFF;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px;
+    margin: 0;
+    border-bottom: solid 1px rgba(100, 100, 100, .30);
+}
+
+.seeAll {
+    background: #7477bf;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-top: solid 1px rgba(100, 100, 100, .30);
+    text-align: center;
+    position: relative;
+    top: -250px;
+}
+
+.seeAll a {
+    color: #3b5998;
+}
+
+.seeAll a:hover {
+    background: #F6F7F8;
+    color: #3b5998;
+    text-decoration: underline;
+}
+
+a:link {
+    /* Applies to all unvisited links */
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+    /* Applies to all visited links */
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    /* Applies to links under the pointer */
+    text-decoration: underline;
+    color: #fff;
+}
+
+a:active {
+    /* Applies to activated links */
+    text-decoration: underline;
+    color: white;
+}
+
+#hr {
+    border-color: #6266bf;
+    -webkit-transform: rotate(90deg);
+    position: absolute;
+    width: 50px;
+    left: 153px;
+    top: 35%;
+    margin-bottom: -1px;
+}
+
+#navigation {
+    height: 50px;
+    background-color: #4d4c72;
+}
+
+[class^="navicon"] {
+    display: flex width: 30px;
+    height: 30px;
+    position: relative;
+    top: 15%;
+    margin-left: 33px;
+    left: 40px;
+}
+
+.dash {
+    color: gray;
+    font-size: 15px;
+    position: absolute;
+    top: 135px;
+    margin-left: 10px;
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #7477bf;
+    padding: 5px;
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.searchTerm:focus {
+    color: #7477bf;
+}
+
+.searchButton {
+    position: absolute;
+    right: -40px;
+    width: 26px;
+    height: 24px;
+    top: 7px;
+    border: 1px solid #7477bf;
+    background: #7477bf;
+    background: url(../icons/lupa.svg) no-repeat;
+    background-position: 55% 50%;
+    background-size: 12px;
+    ;
+    text-align: center;
+    background-color: #7477bf;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/*Dashboard*/
+
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 165px;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.messagebar-default {
+    position: absolute;
+    width: 80%;
+    left: -70px;
+    top: 100px;
+    margin: 100px;
+    padding: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+/*Graphs*/
+
+#myLineChart {
+    position: relative;
+    max-height: 40vh;
+    max-width: 96vw;
+    right: -10px;
+    top: 210px;
+    margin: 0px;
+    padding: 0;
+}
+
+#myChart {
+    position: relative;
+    height: 90vh;
+    width: 85vw;
+    right: -10px;
+    top: 239px;
+    margin: 0px;
+    padding: 0;
+}
+
+#myDoughnutChart {
+    position: absolute;
+    top: 699px;
+    left: 40px;
+    max-height: 50vh;
+    max-width: 80vw;
+}
+
+.traffic {
+    font-size: 13px;
+    position: absolute;
+    top: 240px;
+    margin-left: 30px;
+}
+
+.traffic-navigation {
+    position: absolute;
+    display: flex;
+    top: 250px;
+    right: 130px;
+    width: 2%;
+    justify-content: space-between;
+    margin-right: 2em;
+    list-style: none;
+}
+
+ul.traffic-navigation li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 10px;
+    color: black;
+    margin: 5px;
+}
+
+.active {
+    background: #90ee90;
+    color: white;
+    border-radius: 10px;
+}
+
+.daily {
+    font-size: 13px;
+    position: absolute;
+    top: 450px;
+    margin-left: 30px;
+}
+
+.mobile {
+    font-size: 13px;
+    position: absolute;
+    top: 650px;
+    margin-left: 30px;
+}
+
+
+/*Social Widget*/
+
+.socialstats {
+    font-size: 13px;
+    position: absolute;
+    top: 1020px;
+    margin-left: 110px;
+    width: 100px;
+}
+
+.social-container {
+    position: absolute;
+    top: -10px;
+    right: 360px;
+}
+
+.twitter {
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    bottom: -895px;
+    left: 110px;
+    z-index: 1;
+}
+
+.twitterbox {
+    position: absolute;
+    bottom: -920px;
+    left: 60px;
+}
+
+.twittername {
+    position: absolute;
+    bottom: -840px;
+    left: 196px;
+    color: #7477bf;
+    font-size: 20px;
+}
+
+.twitterstats {
+    position: absolute;
+    bottom: -870px;
+    left: 200px;
+    font-size: 20px;
+}
+
+.google {
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    bottom: -1110px;
+    left: 112px;
+    z-index: 1;
+}
+
+.facebookname {
+    position: absolute;
+    bottom: -945px;
+    left: 190px;
+    color: #7477bf;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.facebookstats {
+    position: absolute;
+    bottom: -975px;
+    left: 210px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.facebookbox {
+    position: absolute;
+    bottom: -1030px;
+    left: 60px;
+}
+
+.facebook {
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    left: 130px;
+    bottom: -999px;
+    left: 106px;
+    z-index: 1;
+}
+
+.googlename {
+    position: absolute;
+    bottom: -1050px;
+    left: 194px;
+    color: #7477bf;
+    font-size: 20px;
+}
+
+.googlestats {
+    position: absolute;
+    bottom: -1081px;
+    left: 210px;
+    font-size: 20px;
+}
+
+.googlebox {
+    position: absolute;
+    bottom: -1140px;
+    left: 60px;
+}
+
+h1 {
+    font-size: 12px;
+}
+
+.social-container {
+    position: absolute;
+    bottom: 250px;
+}
+
+.circle1 {
+    position: absolute;
+    bottom: -880px;
+    left: 78px;
+}
+
+.circle2 {
+    position: absolute;
+    bottom: -990px;
+    left: 78px;
+}
+
+.circle3 {
+    position: absolute;
+    bottom: -1100px;
+    left: 78px;
+}
+
+
+/*Member Activity*/
+
+.sub-heading {
+    position: absolute;
+    top: -30px;
+    left: 40px;
+}
+
+.flex-container {
+    position: absolute;
+    top: 270%;
+    left: 20%;
+}
+
+.member-data {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    width: 99%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DFDFDF;
+    margin-top: 10px;
+}
+
+.member-icon {
+    position: absolute;
+    left: -60px;
+    border-radius: 50%;
+}
+
+.icon {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+
+/*Form*/
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#send {
+    background-color: #7477bf;
+    color: white;
+    padding: 12px;
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#send:focus {
+    outline: none;
+}
+
+.input-control {
+    padding: 10px;
+    width: 100%;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+#error_message {
+    color: white;
+    background: #7477bf;
+}
+
+#success_message {
+    background: #CCF5CC;
+}
+
+#send:hover {
+    background-color: #4CAF50;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    bottom: -1660px;
+    left: 10px;
+}
+
+.msguser {
+    font-size: 16px;
+    position: absolute;
+    bottom: -1480px;
+    margin-left: 19px;
+}
+
+.recentact {
+    font-size: 16px;
+    position: absolute;
+    top: -30px;
+    margin-left: 40px;
+}
+
+.member-act {
+    position: absolute;
+    top: 890px;
+    margin-left: 70px;
+}
+
+.act-flex-container {
+    position: absolute;
+    font-size: 16px;
+    top: 1800px;
+    left: 20%;
+    width: 240px;
+}
+
+.top-info {
+    font-size: 12px;
+}
+
+.act-bottom-info {
+    display: block;
+    font-size: 8px;
+}
+
+.act-flex-container .activity-data {
+    width: 100%;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.activity-arrow {
+    margin-left: 70%;
+    margin-top: -35px;
+    width: 30%;
+    position: absolute;
+    font-size: 30px;
+    color: #7477bf;
+}
+
+.settings {
+    font-size: 16px;
+    position: absolute;
+    bottom: -1840px;
+    margin-left: 120px;
+}
+
+.notitoggle {
+    font-size: 13px;
+    position: absolute;
+    bottom: -1880px;
+    margin-left: 20px;
+}
+
+.profiletoggle {
+    font-size: 13px;
+    position: absolute;
+    bottom: -2000px;
+    margin-left: 20px;
+    width: 118px;
+}
+
+.input-toggle {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    bottom: -1970px;
+    margin-left: 200px;
+}
+
+.profile-settings {
+    position: absolute;
+    bottom: 50px;
+}
+
+.input-toggle input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.input-toggle-handle {
+    display: block;
+    width: 84px;
+    height: 44px;
+    transition: .4s ease;
+    background-image: linear-gradient( #7477bf, #7477bf);
+    border-radius: 10em;
+    box-shadow: inset 0 1px rgba(0, 0, 0, .15), inset 0 0 0 1px rgba(0, 0, 0, .15), inset 0 1px 2px rgba(0, 0, 0, .15), inset 44px 44px #fff;
+}
+
+.input-toggle-handle:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 8px;
+    width: 32px;
+    height: 32px;
+    transition: .4s ease;
+    border-radius: 10em;
+    background: #fff;
+    box-shadow: inset 0 -1px rgba(0, 0, 0, .2), inset 0 0 0 1px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .1), 0 6px 12px rgba(0, 0, 0, .1);
+}
+
+.input-toggle input:checked~.input-toggle-handle {
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.15), inset 0 0 0 1px gray;
+}
+
+.input-toggle input:checked~.input-toggle-handle:before {
+    left: 44px;
+    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 0 0 1px gray, 0 1px 2px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.input-toggle:before {
+    content: "on";
+    left: 0;
+    color: #fff;
+}
+
+.input-toggle:after {
+    content: "off";
+    right: 0;
+    color: #7477bf;
+}
+
+.input-toggle:before,
+.input-toggle:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 16px;
+    font-size: 12px;
+    z-index: 0;
+}
+
+#DropDownTimezone {
+    position: absolute;
+    bottom: -2060px;
+    margin-left: 60px;
+    width: 200px;
+}
+
+.buttons {
+    position: absolute;
+    top: 480%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-100%, -200%);
+}
+
+.button1 {
+    background-color: #7477bf;
+    color: white;
+    border: 2px solid #7477bf;
+    border-radius: 10px;
+}
+
+.button1:hover {
+    background-color: gray;
+    color: white;
+}
+
+.button2 {
+    background-color: #7477bf;
+    color: white;
+    border: 2px solid #008CBA;
+    border-radius: 10px;
+}
+
+.button2:hover {
+    background-color: gray;
+    color: white;
+}
+
+@media (min-width: 768px) {
     .appname {
-        position: absolute;
-        top: 35%;
-        left: 1%;
+        top: 4%;
+        left: 3%;
         font-size: 20px;
     }
-    
     .userpic {
-        position: absolute;
-        top: 90%;
-        left: 250px;
-        margin-top: -40px;
-        border-radius: 50%;
-        width: 25px;
+        left: 80%;
     }
-    
     .username {
-        position: absolute;
-        top: 35%;
-        left: 280px;
-    }
-    
-    #hr {
-        border-color: #6266bf;
-        -webkit-transform: rotate(90deg);
-        position: absolute;
-        width: 50px;
-        left: 108px;
-        top: 25%;
-        margin-bottom: -1px;
-        margin-left: 60px;
-    }
-    
-    #noti_Button {
-        position: absolute;
-        top: 20px;
-        right: 151px;
-        height: 100px;
-        width: 25px;
-        height: 25px;
-    }
-    /* THE POPULAR RED NOTIFICATIONS COUNTER. */
-    
-    #noti_Counter {
-        display: block;
-        position: absolute;
-        background: lightgreen;
-        color: #FFF;
-        top: 26px;
-        left: 140px;
-        padding: 3px 3px;
-        margin: -6px 0 0 90px;
-        border-radius: 50%;
-        -moz-border-radius: 50%x;
-        -webkit-border-radius: 50%;
-        z-index: 1;
-    }
-    /* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
-    
-    #notifications {
-        display: none;
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        top: 60px;
-        left: 134px;
-        background: #FFF;
-        border: solid 1px rgba(100, 100, 100, .20);
-        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .20);
-        z-index: 1;
-    }
-    /* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
-    
-    #notifications:before {
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        color: transparent;
-        border: 10px solid #CCC;
-        border-color: transparent transparent #FFF;
-        margin-top: -20px;
-        margin-left: 10px;
-    }
-    
-    h3 {
-        display: block;
-        color: #333;
-        background: #FFF;
-        font-weight: bold;
-        font-size: 13px;
-        padding: 8px;
-        margin: 0;
-        border-bottom: solid 1px rgba(100, 100, 100, .30);
-    }
-    
-    .seeAll {
-        background: #7477bf;
-        padding: 10px;
-        font-size: 12px;
-        font-weight: bold;
-        border-top: solid 1px rgba(100, 100, 100, .30);
-        text-align: center;
-        position: relative;
-        top: -250px;
-    }
-    
-    .seeAll a {
-        color: #3b5998;
-    }
-    
-    .seeAll a:hover {
-        background: #F6F7F8;
-        color: #3b5998;
-        text-decoration: underline;
-    }
-    
-    a:link {
-        /* Applies to all unvisited links */
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    a:visited {
-        /* Applies to all visited links */
-        text-decoration: none;
-        color: #fff;
-    }
-    
-    a:hover {
-        /* Applies to links under the pointer */
-        text-decoration: underline;
-        color: #fff;
-    }
-    
-    a:active {
-        /* Applies to activated links */
-        text-decoration: underline;
-        color: white;
-    }
-    
-    #hr {
-        border-color: #6266bf;
-        -webkit-transform: rotate(90deg);
-        position: absolute;
-        width: 50px;
-        left: 153px;
-        top: 35%;
-        margin-bottom: -1px;
-    }
-    
-    #navigation {
-        height: 50px;
-        background-color: #4d4c72;
-    }
-    
-    [class^="navicon"] {
-        display: flex width: 30px;
-        height: 30px;
-        position: relative;
-        top: 15%;
-        margin-left: 33px;
-        left: 40px;
-    }
-    
-    .dash {
-        color: gray;
-        font-size: 15px;
-        position: absolute;
-        top: 135px;
-        margin-left: 10px;
-    }
-    
-    .searchTerm {
-        float: left;
-        width: 100%;
-        border: 3px solid #7477bf;
-        padding: 5px;
-        height: 10px;
-        border-radius: 5px;
-        outline: none;
-    }
-    
-    .searchTerm:focus {
-        color: #7477bf;
-    }
-    
-    .searchButton {
-        position: absolute;
-        right: -40px;
-        width: 26px;
-        height: 24px;
-        top: 7px;
-        border: 1px solid #7477bf;
-        background: #7477bf;
-        background: url(../icons/lupa.svg) no-repeat;
-        background-position: 55% 50%;
-        background-size: 12px;
-        ;
-        text-align: center;
-        background-color: #7477bf;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    /*Dashboard*/
-    
-    .wrap {
-        width: 30%;
-        position: absolute;
-        top: 165px;
-        left: 65%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .messagebar-default {
-        position: absolute;
-        width: 80%;
-        left: -70px;
-        top: 100px;
-        margin: 100px;
-        padding: 0;
-        color: #fff;
-        font-size: 12px;
-    }
-    /*Graphs*/
-    
-    #myLineChart {
-        position: relative;
-        max-height: 40vh;
-        max-width: 96vw;
-        right: -10px;
-        top: 210px;
-        margin: 0px;
-        padding: 0;
-    }
-    
-    #myChart {
-        position: relative;
-        height: 90vh;
-        width: 85vw;
-        right: -10px;
-        top: 239px;
-        margin: 0px;
-        padding: 0;
-    }
-    
-    #myDoughnutChart {
-        position: absolute;
-        top: 699px;
-        left: 40px;
-        max-height: 50vh;
-        max-width: 80vw;
-    }
-    
-    .traffic {
-        font-size: 13px;
-        position: absolute;
-        top: 240px;
-        margin-left: 30px;
-    }
-    
-    .traffic-navigation {
-        position: absolute;
-        display: flex;
-        top: 250px;
-        right: 130px;
-        width: 2%;
-        justify-content: space-between;
-        margin-right: 2em;
-        list-style: none;
-    }
-    
-    ul.traffic-navigation li a {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        font-size: 10px;
-        color: black;
-        margin: 5px;
-    }
-    
-    .active {
-        background: #90ee90;
-        color: white;
-        border-radius: 10px;
-    }
-    
-    .daily {
-        font-size: 13px;
-        position: absolute;
-        top: 450px;
-        margin-left: 30px;
-    }
-    
-    .mobile {
-        font-size: 13px;
-        position: absolute;
-        top: 650px;
-        margin-left: 30px;
-    }
-    /*Social Widget*/
-    
-    .socialstats {
-        font-size: 13px;
-        position: absolute;
-        top: 1020px;
-        margin-left: 110px;
+        left: 650px;
         width: 100px;
     }
-    
+    #hr {
+        left: 577px;
+    }
+    #noti_Button {
+        left: 73%;
+    }
+    #noti_Counter {
+        left: 73%;
+    }
+    #notifications {
+        left: 550px;
+    }
+    .messagebar-default {
+        width: 50%;
+        height: 30px;
+        left: 100px;
+        font-size: 15px;
+    }
+    .wrap {
+        top: 169px;
+        left: 75%;
+    }
+    #myChart {
+        top: 330px;
+        left: 50px;
+        max-height: 100vh;
+        max-width: 90vw;
+    }
+    #myLineChart {
+        top: 215px;
+        left: 50px;
+        max-height: 610vh;
+        max-width: 90vw;
+    }
+    #myDoughnutChart {
+        top: 1217px;
+        left: 160px;
+        max-height: 90vh;
+        max-width: 58vw;
+    }
+    .daily {
+        top: 700px;
+    }
+    .mobile {
+        top: 1200px;
+    }
+    .socialstats {
+        top: 1690px;
+        margin-left: 310px;
+    }
     .social-container {
-        position: absolute;
-        top: -10px;
-        right: 360px;
+        top: 980px;
+        right: 610px;
     }
-    
-    .twitter {
-        width: 40px;
-        height: 120px;
-        position: absolute;
-        bottom: -895px;
-        left: 110px;
-        z-index: 1;
+    .member-data {
+        width: 310px;
+        margin-top: 2px;
+        padding-bottom: 4px;
     }
-    
-    .twitterbox {
-        position: absolute;
-        bottom: -920px;
-        left: 60px;
-    }
-    
-    .twittername {
-        position: absolute;
-        bottom: -840px;
-        left: 196px;
-        color: #7477bf;
-        font-size: 20px;
-    }
-    
-    .twitterstats {
-        position: absolute;
-        bottom: -870px;
-        left: 200px;
-        font-size: 20px;
-    }
-    
-    .google {
-        width: 40px;
-        height: 120px;
-        position: absolute;
-        bottom: -1110px;
-        left: 112px;
-        z-index: 1;
-    }
-    
-    .facebookname {
-        position: absolute;
-        bottom: -945px;
-        left: 190px;
-        color: #7477bf;
-        font-size: 20px;
-        z-index: 1;
-    }
-    
-    .facebookstats {
-        position: absolute;
-        bottom: -975px;
-        left: 210px;
-        font-size: 20px;
-        z-index: 1;
-    }
-    
-    .facebookbox {
-        position: absolute;
-        bottom: -1030px;
-        left: 60px;
-    }
-    
-    .facebook {
-        width: 40px;
-        height: 120px;
-        position: absolute;
-        left: 130px;
-        bottom: -999px;
-        left: 106px;
-        z-index: 1;
-    }
-    
-    .googlename {
-        position: absolute;
-        bottom: -1050px;
-        left: 194px;
-        color: #7477bf;
-        font-size: 20px;
-    }
-    
-    .googlestats {
-        position: absolute;
-        bottom: -1081px;
-        left: 210px;
-        font-size: 20px;
-    }
-    
-    .googlebox {
-        position: absolute;
-        bottom: -1140px;
-        left: 60px;
-    }
-    
-    h1 {
-        font-size: 12px;
-    }
-    
-    .social-container {
-        position: absolute;
-        bottom: 250px;
-    }
-    
-    .circle1 {
-        position: absolute;
-        bottom: -880px;
-        left: 78px;
-    }
-    
-    .circle2 {
-        position: absolute;
-        bottom: -990px;
-        left: 78px;
-    }
-    
-    .circle3 {
-        position: absolute;
-        bottom: -1100px;
-        left: 78px;
-    }
-    /*Member Activity*/
-    
-    .sub-heading {
-        position: absolute;
-        top: -30px;
-        left: 40px;
-    }
-    
     .flex-container {
         position: absolute;
-        top: 270%;
-        left: 20%;
+        top: 215%;
+        left: 30%;
     }
-    
-    .member-data {
-        display: inline-flex;
-        align-items: center;
-        font-size: 12px;
-        width: 99%;
-        padding-bottom: 10px;
+    .act-flex-container {
+        top: 246%;
+        left: 30%;
+        width: 320px;
+        height: 140px;
+    }
+    .act-flex-container .activity-data {
+        width: 90%;
         border-bottom: 1px solid #DFDFDF;
-        margin-top: 10px;
     }
-    
-    .member-icon {
-        position: absolute;
-        left: -60px;
-        border-radius: 50%;
-    }
-    
-    .icon {
-        border-radius: 100%;
-        width: 40px;
-        height: 40px;
-    }
-    /*Form*/
-    
-    input[type=text],
-    select,
-    textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-    }
-    
-    #send {
-        background-color: #7477bf;
-        color: white;
-        padding: 12px;
-        margin: 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        margin: 20px;
-    }
-    
-    #send:focus {
-        outline: none;
-    }
-    
-    .input-control {
-        padding: 10px;
-        width: 100%;
-    }
-    
-    .input-group {
-        margin-top: 10px;
-    }
-    
-    #error_message {
-        color: white;
-        background: #7477bf;
-    }
-    
-    #success_message {
-        background: #CCF5CC;
-    }
-    
-    #send:hover {
-        background-color: #4CAF50;
-    }
-    
-    .container {
-        border-radius: 5px;
-        padding: 20px;
-        position: relative;
-        bottom: -1660px;
-        left: 10px;
-    }
-    
-    .msguser {
-        font-size: 16px;
-        position: absolute;
-        bottom: -1480px;
-        margin-left: 19px;
-    }
-    
-    .recentact {
-        font-size: 16px;
-        position: absolute;
-        top: -30px;
-        margin-left: 40px;
-    }
-    
     .member-act {
         position: absolute;
         top: 890px;
         margin-left: 70px;
     }
-    
-    .act-flex-container {
-        position: absolute;
-        font-size: 16px;
-        top: 1800px;
-        left: 20%;
-        width: 240px;
-    }
-    
-    .top-info {
-        font-size: 12px;
-    }
-    
-    .act-bottom-info {
-        display: block;
-        font-size: 8px;
-    }
-    
-    .act-flex-container .activity-data {
-        width: 100%;
-        border-bottom: 1px solid #DFDFDF;
-    }
-    
     .activity-arrow {
-        margin-left: 70%;
+        margin-left: 90%;
         margin-top: -35px;
-        width: 30%;
-        position: absolute;
-        font-size: 30px;
-        color: #7477bf;
     }
-    
-    .settings {
+    .act-bottom-info {
+        margin-top: 1px;
+    }
+    .contact-info {
+        margin-top: 10px;
+        padding-bottom: 4px;
+    }
+    .bottom-info {
+        padding: 50px;
+        margin-left: -18%;
+    }
+    .msguser {
         font-size: 16px;
         position: absolute;
-        bottom: -1840px;
-        margin-left: 120px;
+        bottom: -1770px;
+        margin-left: 270px;
     }
-    
+    .container {
+        bottom: -2060px;
+        width: 500px;
+        left: 100px;
+    }
+    .settings {
+        bottom: -2150px;
+        margin-left: 310px;
+    }
     .notitoggle {
         font-size: 13px;
         position: absolute;
-        bottom: -1880px;
-        margin-left: 20px;
+        bottom: -2190px;
+        margin-left: 200px;
     }
-    
     .profiletoggle {
         font-size: 13px;
+        width: 120px;
         position: absolute;
-        bottom: -2000px;
-        margin-left: 20px;
-        width: 118px;
+        bottom: -2295px;
+        margin-left: 200px;
     }
-    
     .input-toggle {
         position: absolute;
         display: inline-block;
         vertical-align: middle;
-        bottom: -1970px;
-        margin-left: 200px;
+        bottom: -2270px;
+        margin-left: 400px;
     }
-    
     .profile-settings {
         position: absolute;
         bottom: 50px;
     }
-    
-    .input-toggle input {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-    }
-    
-    .input-toggle-handle {
-        display: block;
-        width: 84px;
-        height: 44px;
-        transition: .4s ease;
-        background-image: linear-gradient( #7477bf, #7477bf);
-        border-radius: 10em;
-        box-shadow: inset 0 1px rgba(0, 0, 0, .15), inset 0 0 0 1px rgba(0, 0, 0, .15), inset 0 1px 2px rgba(0, 0, 0, .15), inset 44px 44px #fff;
-    }
-    
-    .input-toggle-handle:before {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        top: 25px;
-        left: 8px;
-        width: 32px;
-        height: 32px;
-        transition: .4s ease;
-        border-radius: 10em;
-        background: #fff;
-        box-shadow: inset 0 -1px rgba(0, 0, 0, .2), inset 0 0 0 1px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .1), 0 6px 12px rgba(0, 0, 0, .1);
-    }
-    
-    .input-toggle input:checked~.input-toggle-handle {
-        box-shadow: inset 0 1px rgba(0, 0, 0, 0.15), inset 0 0 0 1px gray;
-    }
-    
-    .input-toggle input:checked~.input-toggle-handle:before {
-        left: 44px;
-        box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 0 0 1px gray, 0 1px 2px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    .input-toggle:before {
-        content: "on";
-        left: 0;
-        color: #fff;
-    }
-    
-    .input-toggle:after {
-        content: "off";
-        right: 0;
-        color: #7477bf;
-    }
-    
-    .input-toggle:before,
-    .input-toggle:after {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 12px 16px;
-        font-size: 12px;
-        z-index: 0;
-    }
-    
     #DropDownTimezone {
         position: absolute;
-        bottom: -2060px;
-        margin-left: 60px;
-        width: 200px;
+        bottom: -2340px;
+        margin-left: 220px;
+        width: 270px;
     }
-    
-    .buttons {
-        position: absolute;
-        top: 480%;
-        left: 50%;
-        width: 200px;
-        transform: translate(-100%, -200%);
+    #send {
+        margin-left: 80px;
+        width: 300px;
     }
-    
-    .button1 {
-        background-color: #7477bf;
-        color: white;
-        border: 2px solid #7477bf;
-        border-radius: 10px;
-    }
-    
-    .button1:hover {
-        background-color: gray;
-        color: white;
-    }
-    
-    .button2 {
-        background-color: #7477bf;
-        color: white;
-        border: 2px solid #008CBA;
-        border-radius: 10px;
-    }
-    
-    .button2:hover {
-        background-color: gray;
-        color: white;
-    }
-    
-    @media (min-width: 768px) {
-        .appname {
-            top: 4%;
-            left: 3%;
-            font-size: 20px;
-        }
-        .userpic {
-            left: 80%;
-        }
-        .username {
-            left: 650px;
-            width: 100px;
-        }
-        #hr {
-            left: 577px;
-        }
-        #noti_Button {
-            left: 73%;
-        }
-        #noti_Counter {
-            left: 73%;
-        }
-        #notifications {
-            left: 550px;
-        }
-        .messagebar-default {
-            width: 50%;
-            height: 30px;
-            left: 100px;
-            font-size: 15px;
-        }
-        .wrap {
-            top: 169px;
-            left: 75%;
-        }
-        #myChart {
-            top: 330px;
-            left: 50px;
-            max-height: 100vh;
-            max-width: 90vw;
-        }
-        #myLineChart {
-            top: 215px;
-            left: 50px;
-            max-height: 610vh;
-            max-width: 90vw;
-        }
-        #myDoughnutChart {
-            top: 1217px;
-            left: 160px;
-            max-height: 90vh;
-            max-width: 58vw;
-        }
-        .daily {
-            top: 700px;
-        }
-        .mobile {
-            top: 1200px;
-        }
-        .socialstats {
-            top: 1690px;
-            margin-left: 310px;
-        }
-        .social-container {
-            top: 980px;
-            right: 610px;
-        }
-        .member-data {
-            width: 310px;
-            margin-top: 2px;
-            padding-bottom: 4px;
-        }
-        .flex-container {
-            position: absolute;
-            top: 215%;
-            left: 30%;
-        }
-        .act-flex-container {
-            top: 246%;
-            left: 30%;
-            width: 320px;
-            height: 140px;
-        }
-        .act-flex-container .activity-data {
-            width: 90%;
-            border-bottom: 1px solid #DFDFDF;
-        }
-        .member-act {
-            position: absolute;
-            top: 890px;
-            margin-left: 70px;
-        }
-        .activity-arrow {
-            margin-left: 90%;
-            margin-top: -35px;
-        }
-        .act-bottom-info {
-            margin-top: 1px;
-        }
-        .contact-info {
-            margin-top: 10px;
-            padding-bottom: 4px;
-        }
-        .bottom-info {
-            padding: 50px;
-            margin-left: -18%;
-        }
-        .msguser {
-            font-size: 16px;
-            position: absolute;
-            bottom: -1770px;
-            margin-left: 270px;
-        }
-        .container {
-            bottom: -2060px;
-            width: 500px;
-            left: 100px;
-        }
-        .settings {
-            bottom: -2150px;
-            margin-left: 310px;
-        }
-        .notitoggle {
-            font-size: 13px;
-            position: absolute;
-            bottom: -2190px;
-            margin-left: 200px;
-        }
-        .profiletoggle {
-            font-size: 13px;
-            width: 120px;
-            position: absolute;
-            bottom: -2295px;
-            margin-left: 200px;
-        }
-        .input-toggle {
-            position: absolute;
-            display: inline-block;
-            vertical-align: middle;
-            bottom: -2270px;
-            margin-left: 400px;
-        }
-        .profile-settings {
-            position: absolute;
-            bottom: 50px;
-        }
-        #DropDownTimezone {
-            position: absolute;
-            bottom: -2340px;
-            margin-left: 220px;
-            width: 270px;
-        }
-        #send {
-            margin-left: 80px;
-            width: 300px;
-        }
-        .buttons {
-            top: 330%;
-            transform: translate(-10%, -10%);
-        }
-        .traffic-navigation {
-            right: 190px;
-            width: 2%;
-        }
-    }
-    
-    @media (min-width: 1024px) {
-        .username {
-            left: 890px;
-            top: 75px;
-            width: 10%
-        }
-        .userpic {
-            left: 840px;
-            width: 34px;
-            height: 35px;
-            margin-top: -53px;
-        }
-        #hr {
-            left: 790px;
-        }
-        #noti_Button {
-            left: 770px;
-            margin-top: -50px;
-            width: 30px;
-            height: 35px;
-        }
-        #noti_Counter {
-            left: 770px;
-        }
-        #notifications {
-            left: 1004px;
-        }
-        .appname {
-            font-size: 20px;
-        }
-        .navigation {
-            flex-direction: column;
-            left: 0;
-            min-height: 100vh;
-            align-self: stretch;
-            width: 80px;
-        }
-        [class^="navicon"] {
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-direction: column;
-            -webkit-align-items: flex-start;
-            align-items: flex-start;
-        }
-        .dash {
-            font-size: 18px;
-            top: 80px;
-            margin-left: 90px;
-        }
-        /*Resize the wrap to see the search bar change!*/
-        .wrap {
-            top: 120px;
-            left: 79%;
-        }
-        .messagebar-default {
-            width: 50%;
-            height: 30px;
-            left: 200px;
-            top: 80px;
-            font-size: 15px;
-        }
-        #myLineChart {
-            max-height: 80vh;
-            max-width: 80vw;
-            left: 140px;
-        }
-        .traffic {
-            left: 100px;
-        }
-        .daily {
-            left: 100px;
-            top: 800px;
-        }
-        #myChart {
-            max-height: 45vh;
-            max-width: 45vw;
-            left: 130px;
-            top: 340px;
-        }
-        .mobile {
-            left: 590px;
-            top: 800px;
-        }
-        #myDoughnutChart {
-            max-height: 25vh;
-            max-width: 20vw;
-            left: 710px;
-            top: 830px;
-        }
-        .socialstats {
-            left: -200px;
-            top: 1100px;
-        }
-        .social-container {
-            top: 300px;
-            vertical-align: 50px;
-        }
-        .twitter-widget {
-            position: absolute;
-            left: -389px;
-            top: 99px;
-        }
-        .facebook-widget {
-            position: absolute;
-            right: 90px;
-            top: -9px;
-        }
-        .google-widget {
-            position: absolute;
-            right: -200px;
-            top: -120px;
-        }
-        .flex-container {
-            top: 100%;
-            left: 17%;
-            width: 31%;
-        }
-        .bottom-info {
-            padding: 0 18%;
-        }
-        .act-flex-container {
-            top: 100%;
-            left: 60%;
-        }
-        .recentact {
-            top: -30px;
-        }
-        .top-info {
-            width: 10%;
-        }
-        .join-date {
-            margin-right: 10px;
-        }
-        .container {
-            top: 890px;
-            left: 10%;
-            width: 35%;
-        }
-        .act-flex-container .activity-data {
-            margin-bottom: 1px;
-        }
-        .msguser {
-            bottom: -250px;
-            left: -150px;
-            width: 105px;
-        }
-        margin-left: -1px;
-    }
-    
-    .settings-container {
-        position: relative;
-        top: -1586px;
-        right: -400px;
-        width: 100px;
-    }
-    
-    .notitoggle {
-        width: 200px;
-    }
-    
-    .arrow {
-        margin-left: 50px;
-    }
-    
-    .traffic-navigation ul {
-        margin-left: 0;
-        width: 26%;
-    }
-    
     .buttons {
         top: 330%;
+        transform: translate(-10%, -10%);
+    }
+    .traffic-navigation {
+        right: 190px;
+        width: 2%;
+    }
+    [class^="navicon"] {
+        margin-left: 100px;
+        left: 15px;
     }
 }
 
+@media (min-width: 1024px) {
+    .username {
+        left: 890px;
+        top: 75px;
+        width: 10%
+    }
+    .userpic {
+        left: 840px;
+        width: 34px;
+        height: 35px;
+        margin-top: -53px;
+    }
+    #hr {
+        left: 790px;
+    }
+    #noti_Button {
+        left: 770px;
+        margin-top: -50px;
+        width: 30px;
+        height: 35px;
+    }
+    #noti_Counter {
+        left: 770px;
+    }
+    #notifications {
+        left: 1004px;
+    }
+    .appname {
+        font-size: 20px;
+    }
+    #navigation {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        min-height: 200vh;
+        width: 80px;
+    }
+    [class^="navicon"] {
+        display: flex;
+        align-items: flex-start;
+        width: 35px;
+        height: 35px;
+        margin-left: 1%;
+        top: -20px;
+        margin-top: 50%;
+        left: 23%;
+    }
+    .dash {
+        font-size: 18px;
+        top: 80px;
+        margin-left: 90px;
+    }
+    /*Resize the wrap to see the search bar change!*/
+    .wrap {
+        top: 120px;
+        left: 79%;
+    }
+    .messagebar-default {
+        width: 50%;
+        height: 30px;
+        left: 200px;
+        top: 80px;
+        font-size: 15px;
+    }
+    #myLineChart {
+        max-height: 80vh;
+        max-width: 80vw;
+        left: 140px;
+    }
+    .traffic {
+        left: 100px;
+    }
+    .daily {
+        left: 100px;
+        top: 800px;
+    }
+    #myChart {
+        max-height: 45vh;
+        max-width: 45vw;
+        left: 130px;
+        top: 340px;
+    }
+    .mobile {
+        left: 590px;
+        top: 800px;
+    }
+    #myDoughnutChart {
+        max-height: 25vh;
+        max-width: 20vw;
+        left: 710px;
+        top: 830px;
+    }
+    .socialstats {
+        left: -200px;
+        top: 1100px;
+    }
+    .social-container {
+        top: 300px;
+        vertical-align: 50px;
+    }
+    .twitter-widget {
+        position: absolute;
+        left: -389px;
+        top: 99px;
+    }
+    .facebook-widget {
+        position: absolute;
+        right: 90px;
+        top: -9px;
+    }
+    .google-widget {
+        position: absolute;
+        right: -200px;
+        top: -120px;
+    }
+    .flex-container {
+        top: 100%;
+        left: 17%;
+        width: 31%;
+    }
+    .bottom-info {
+        padding: 0 18%;
+    }
+    .act-flex-container {
+        top: 100%;
+        left: 60%;
+    }
+    .recentact {
+        top: -30px;
+    }
+    .top-info {
+        width: 10%;
+    }
+    .join-date {
+        margin-right: 10px;
+    }
+    .container {
+        top: 890px;
+        left: 10%;
+        width: 35%;
+    }
+    .act-flex-container .activity-data {
+        margin-bottom: 1px;
+    }
+    .msguser {
+        bottom: -250px;
+        left: -150px;
+        width: 105px;
+    }
+    margin-left: -1px;
 }
+
+.settings-container {
+    position: relative;
+    top: -1586px;
+    right: -400px;
+    width: 100px;
+}
+
+.notitoggle {
+    width: 200px;
+}
+
+.arrow {
+    margin-left: 50px;
+}
+
+.traffic-navigation ul {
+    margin-left: 0;
+    width: 26%;
+}
+
+.buttons {
+    top: 330%;
+}
+
 #send {
     width: 360px;
+}
+
+
+}
