@@ -187,17 +187,20 @@ a:active {
 }
 
 #navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     height: 50px;
     background-color: #4d4c72;
 }
 
 [class^="navicon"] {
-    display: flex width: 30px;
+    width: 30px;
     height: 30px;
-    position: relative;
-    top: 15%;
-    margin-left: 33px;
-    left: 40px;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
 }
 
 .dash {
@@ -269,8 +272,8 @@ a:active {
 #myLineChart {
     position: relative;
     max-height: 40vh;
-    max-width: 96vw;
-    right: -10px;
+    max-width: 90vw;
+    right: -12px;
     top: 210px;
     margin: 0px;
     padding: 0;
@@ -765,6 +768,9 @@ textarea {
     color: white;
 }
 
+
+/*
+
 @media (min-width: 768px) {
     .appname {
         top: 4%;
@@ -988,7 +994,7 @@ textarea {
         top: 80px;
         margin-left: 90px;
     }
-    /*Resize the wrap to see the search bar change!*/
+   
     .wrap {
         top: 120px;
         left: 79%;
@@ -1118,3 +1124,5 @@ textarea {
 
 
 }
+
+/*
