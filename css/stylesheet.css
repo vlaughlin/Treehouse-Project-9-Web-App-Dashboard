@@ -5,70 +5,70 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background: #fff;
 }
 
 li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .header-flex {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    height: 70px;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 70px;
     background-color: #7477bf;
 }
 
-header-flex-items {
-    position: absolute;
+.right-header-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
 .appname {
-    position: absolute;
-    top: 35%;
-    left: 1%;
-    font-size: 20px;
+    margin-left: 0;
+    font-size: 25px;
 }
 
 .userpic {
-    position: absolute;
-    top: 90%;
-    left: 250px;
-    margin-top: -40px;
+    margin-left: -50%;
     border-radius: 50%;
     width: 25px;
 }
 
 .username {
-    position: absolute;
-    top: 35%;
-    left: 280px;
+    margin: -20%;
 }
 
 #hr {
+    display: flex;
     border-color: #6266bf;
     -webkit-transform: rotate(90deg);
     position: absolute;
     width: 50px;
-    left: 108px;
-    top: 25%;
+    left: 55%;
+    top: 1.5%;
     margin-bottom: -1px;
-    margin-left: 60px;
 }
 
 #noti_Button {
-    position: absolute;
-    top: 20px;
-    right: 151px;
-    height: 100px;
     width: 25px;
     height: 25px;
+}
+
+#noti_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -20%;
 }
 
 
@@ -79,10 +79,8 @@ header-flex-items {
     position: absolute;
     background: lightgreen;
     color: #FFF;
-    top: 26px;
-    left: 140px;
     padding: 3px 3px;
-    margin: -6px 0 0 90px;
+    margin: -6px 0 0 11px;
     border-radius: 50%;
     -moz-border-radius: 50%x;
     -webkit-border-radius: 50%;
@@ -120,15 +118,30 @@ header-flex-items {
     margin-left: 10px;
 }
 
-h3 {
+.chart-container h3 {
+    position: relative;
     display: block;
     color: #333;
-    background: #FFF;
     font-weight: bold;
     font-size: 13px;
-    padding: 8px;
-    margin: 0;
-    border-bottom: solid 1px rgba(100, 100, 100, .30);
+}
+
+.traffic {
+    position: absolute;
+    top: 170px;
+    left: -20%;
+}
+
+.daily {
+    position: absolute;
+    top: 50px;
+    left: -20%;
+}
+
+.mobile {
+    position: absolute;
+    top: 50px;
+    left: -20%;
 }
 
 .seeAll {
@@ -174,16 +187,6 @@ a:active {
     /* Applies to activated links */
     text-decoration: underline;
     color: white;
-}
-
-#hr {
-    border-color: #6266bf;
-    -webkit-transform: rotate(90deg);
-    position: absolute;
-    width: 50px;
-    left: 153px;
-    top: 35%;
-    margin-bottom: -1px;
 }
 
 #navigation {
@@ -258,7 +261,7 @@ a:active {
 .messagebar-default {
     position: absolute;
     width: 80%;
-    left: -70px;
+    left: -50px;
     top: 100px;
     margin: 100px;
     padding: 0;
@@ -269,45 +272,34 @@ a:active {
 
 /*Graphs*/
 
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #myLineChart {
-    position: relative;
-    max-height: 40vh;
-    max-width: 90vw;
-    right: -12px;
-    top: 210px;
-    margin: 0px;
-    padding: 0;
+    max-height: 100vh;
+    max-width: 75vw;
+    margin-top: 0%;
 }
 
 #myChart {
-    position: relative;
-    height: 90vh;
-    width: 85vw;
-    right: -10px;
-    top: 239px;
-    margin: 0px;
-    padding: 0;
+    max-height: 100vh;
+    max-width: 75vw;
+    margin-top: 50px;
 }
 
 #myDoughnutChart {
-    position: absolute;
-    top: 699px;
-    left: 40px;
-    max-height: 50vh;
-    max-width: 80vw;
-}
-
-.traffic {
-    font-size: 13px;
-    position: absolute;
-    top: 240px;
-    margin-left: 30px;
+    margin-top: 60px;
+    max-height: 100vh;
+    max-width: 55vw;
 }
 
 .traffic-navigation {
-    position: absolute;
     display: flex;
-    top: 250px;
+    margin-top: 120px;
     right: 130px;
     width: 2%;
     justify-content: space-between;
@@ -330,164 +322,72 @@ ul.traffic-navigation li a {
     border-radius: 10px;
 }
 
-.daily {
-    font-size: 13px;
-    position: absolute;
-    top: 450px;
-    margin-left: 30px;
-}
-
-.mobile {
-    font-size: 13px;
-    position: absolute;
-    top: 650px;
-    margin-left: 30px;
-}
-
 
 /*Social Widget*/
 
-.socialstats {
-    font-size: 13px;
-    position: absolute;
-    top: 1020px;
-    margin-left: 110px;
-    width: 100px;
+.socialheading {
+    position: relative;
+    display: inline-block;
+    bottom: -25px;
+    left: 140px;
+    font-size: 15px;
 }
 
-.social-container {
-    position: absolute;
-    top: -10px;
-    right: 360px;
+.social-widgets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #72dff7;
 }
 
-.twitter {
-    width: 40px;
-    height: 120px;
-    position: absolute;
-    bottom: -895px;
-    left: 110px;
-    z-index: 1;
-}
-
-.twitterbox {
-    position: absolute;
-    bottom: -920px;
-    left: 60px;
-}
-
-.twittername {
-    position: absolute;
-    bottom: -840px;
-    left: 196px;
+.social-widgets span {
+    position: relative;
+    top: -50px;
+    left: 15px;
+    text-align: center;
     color: #7477bf;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-.twitterstats {
-    position: absolute;
-    bottom: -870px;
-    left: 200px;
-    font-size: 20px;
+.social-widgets li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #000;
+    height: 60px;
+    width: 60%;
+    padding: 1em;
+    background: #f2f2f2;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-.google {
-    width: 40px;
-    height: 120px;
-    position: absolute;
-    bottom: -1110px;
-    left: 112px;
-    z-index: 1;
+.social-icons img {
+    position: relative;
+    height: 45px;
+    width: 35px;
+    bottom: -3px;
+    left: 7px;
 }
 
-.facebookname {
-    position: absolute;
-    bottom: -945px;
-    left: 190px;
-    color: #7477bf;
-    font-size: 20px;
-    z-index: 1;
-}
-
-.facebookstats {
-    position: absolute;
-    bottom: -975px;
-    left: 210px;
-    font-size: 20px;
-    z-index: 1;
-}
-
-.facebookbox {
-    position: absolute;
-    bottom: -1030px;
-    left: 60px;
-}
-
-.facebook {
-    width: 40px;
-    height: 120px;
-    position: absolute;
-    left: 130px;
-    bottom: -999px;
-    left: 106px;
-    z-index: 1;
-}
-
-.googlename {
-    position: absolute;
-    bottom: -1050px;
-    left: 194px;
-    color: #7477bf;
-    font-size: 20px;
-}
-
-.googlestats {
-    position: absolute;
-    bottom: -1081px;
-    left: 210px;
-    font-size: 20px;
-}
-
-.googlebox {
-    position: absolute;
-    bottom: -1140px;
-    left: 60px;
-}
-
-h1 {
-    font-size: 12px;
-}
-
-.social-container {
-    position: absolute;
-    bottom: 250px;
-}
-
-.circle1 {
-    position: absolute;
-    bottom: -880px;
-    left: 78px;
-}
-
-.circle2 {
-    position: absolute;
-    bottom: -990px;
-    left: 78px;
-}
-
-.circle3 {
-    position: absolute;
-    bottom: -1100px;
-    left: 78px;
+.social-icons {
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    background: #7477bf;
 }
 
 
 /*Member Activity*/
 
-.sub-heading {
-    position: absolute;
-    top: -30px;
-    left: 40px;
+.member-heading {
+    display: inline;
+    position: relative;
+    top: 257%;
+    left: 110px;
 }
 
 .flex-container {
@@ -830,14 +730,8 @@ textarea {
     .mobile {
         top: 1200px;
     }
-    .socialstats {
-        top: 1690px;
-        margin-left: 310px;
-    }
-    .social-container {
-        top: 980px;
-        right: 610px;
-    }
+ 
+ 
     .member-data {
         width: 310px;
         margin-top: 2px;
@@ -1038,26 +932,8 @@ textarea {
         left: -200px;
         top: 1100px;
     }
-    .social-container {
-        top: 300px;
-        vertical-align: 50px;
-    }
-    .twitter-widget {
-        position: absolute;
-        left: -389px;
-        top: 99px;
-    }
-    .facebook-widget {
-        position: absolute;
-        right: 90px;
-        top: -9px;
-    }
-    .google-widget {
-        position: absolute;
-        right: -200px;
-        top: -120px;
-    }
-    .flex-container {
+ 
+    lex-container {
         top: 100%;
         left: 17%;
         width: 31%;
