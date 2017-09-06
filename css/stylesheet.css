@@ -1,14 +1,8 @@
 /*HEADER*/
 
-
-/*
-
-
 * {
     border: 1px solid red;
 }
-
-*/
 
 body {
     background: #fff;
@@ -44,13 +38,13 @@ li {
 }
 
 .userpic {
-    margin-left: -50%;
+    margin-left: -120%;
     border-radius: 50%;
     width: 25px;
 }
 
 .username {
-    margin: -20%;
+    margin-left: -20%;
 }
 
 #hr {
@@ -59,8 +53,8 @@ li {
     -webkit-transform: rotate(90deg);
     position: absolute;
     width: 50px;
-    left: 55%;
-    top: 1.5%;
+    left: 48%;
+    top: 5%;
     margin-bottom: -1px;
 }
 
@@ -134,8 +128,8 @@ li {
 
 .traffic {
     position: absolute;
-    top: 170px;
-    left: -20%;
+    top: 80px;
+    left: -30%;
 }
 
 .daily {
@@ -305,8 +299,8 @@ a:active {
 
 .traffic-navigation {
     display: flex;
-    margin-top: 120px;
-    right: 130px;
+    margin-top: 40px;
+    margin-left: -100px;
     width: 2%;
     justify-content: space-between;
     margin-right: 2em;
@@ -335,7 +329,7 @@ ul.traffic-navigation li a {
     position: relative;
     display: inline-block;
     bottom: -25px;
-    left: 140px;
+    left: 110px;
     font-size: 15px;
 }
 
@@ -475,21 +469,22 @@ ul.traffic-navigation li a {
 
 /*Form*/
 
-.msguser {
-    position: absolute;
-    bottom: -220%;
-    margin-left: 19px;
+.contact-form h3 {
+    position: relative;
+    bottom: 350px;
+    text-align: center;
+    font-size: 16px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    padding: 20px;
+.contact-form {
     position: relative;
-    bottom: -150px;
-    left: 10px;
-    width: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 5px;
+    width: 50%;
+    bottom: -170px;
+    padding-bottom: 0;
+    right: -20%;
 }
 
 input[type=text],
@@ -507,6 +502,7 @@ textarea {
 
 #send {
     background-color: #7477bf;
+    align-items: center;
     color: white;
     padding: 12px;
     margin: 0;
@@ -543,42 +539,46 @@ textarea {
 }
 
 .settings {
-    font-size: 16px;
-    position: absolute;
-    bottom: -1840px;
+    font-size: 18px;
+    position: relative;
+    bottom: -185px;
     margin-left: 120px;
 }
 
-.notitoggle {
-    font-size: 13px;
+.settings-container {
     position: absolute;
-    bottom: -1880px;
+}
+
+.notitoggle {
+    font-size: 18px;
+    position: relative;
+    bottom: -210px;
     margin-left: 20px;
 }
 
 .profiletoggle {
-    font-size: 13px;
-    position: absolute;
-    bottom: -2000px;
+    font-size: 18px;
+    position: relative;
+    bottom: -220px;
     margin-left: 20px;
     width: 118px;
 }
 
 .input-toggle {
-    position: absolute;
+    position: relative;
     display: inline-block;
     vertical-align: middle;
-    bottom: -1970px;
-    margin-left: 200px;
+    bottom: -160px;
+    padding-bottom: 0;
+    margin-left: 220px;
 }
 
 .profile-settings {
     position: absolute;
-    bottom: 50px;
 }
 
 .input-toggle input {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
@@ -642,17 +642,21 @@ textarea {
 }
 
 #DropDownTimezone {
-    position: absolute;
-    bottom: -2060px;
+    position: relative;
+    display: block;
+    bottom: -306px;
     margin-left: 60px;
     width: 200px;
 }
 
 .buttons {
-    position: absolute;
-    top: 480%;
-    left: 50%;
+    display: block;
+    position: relative;
+    bottom: -500px;
+    left: 95%;
     width: 200px;
+    padding: 30px;
+    margin: 0;
     transform: translate(-100%, -200%);
 }
 
@@ -742,8 +746,6 @@ textarea {
     .mobile {
         top: 1200px;
     }
- 
- 
     .member-data {
         width: 310px;
         margin-top: 2px;
@@ -847,6 +849,8 @@ textarea {
     }
 }
 
+
+/*
 @media (min-width: 1024px) {
     .username {
         left: 890px;
