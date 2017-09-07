@@ -38,13 +38,13 @@ li {
 }
 
 .userpic {
-    margin-left: -120%;
+    margin-left: 70%;
     border-radius: 50%;
     width: 25px;
 }
 
 .username {
-    margin-left: -20%;
+    margin-left: 20%;
 }
 
 #hr {
@@ -53,7 +53,7 @@ li {
     -webkit-transform: rotate(90deg);
     position: absolute;
     width: 50px;
-    left: 48%;
+    left: 47%;
     top: 5%;
     margin-bottom: -1px;
 }
@@ -210,7 +210,7 @@ a:active {
     color: gray;
     font-size: 15px;
     position: absolute;
-    top: 135px;
+    top: 125px;
     margin-left: 10px;
 }
 
@@ -253,7 +253,7 @@ a:active {
 .wrap {
     width: 30%;
     position: absolute;
-    top: 165px;
+    top: 150px;
     left: 65%;
     transform: translate(-50%, -50%);
 }
@@ -261,8 +261,8 @@ a:active {
 .messagebar-default {
     position: absolute;
     width: 80%;
-    left: -50px;
-    top: 100px;
+    left: -70px;
+    top: 70px;
     margin: 100px;
     padding: 0;
     color: #fff;
@@ -282,7 +282,7 @@ a:active {
 #myLineChart {
     max-height: 100vh;
     max-width: 75vw;
-    margin-top: 0%;
+    margin-top: 0;
 }
 
 #myChart {
@@ -299,7 +299,7 @@ a:active {
 
 .traffic-navigation {
     display: flex;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: -100px;
     width: 2%;
     justify-content: space-between;
@@ -471,7 +471,7 @@ ul.traffic-navigation li a {
 
 .contact-form h3 {
     position: relative;
-    bottom: 350px;
+    bottom: 290px;
     text-align: center;
     font-size: 16px;
 }
@@ -481,8 +481,8 @@ ul.traffic-navigation li a {
     display: flex;
     flex-direction: column-reverse;
     border-radius: 5px;
-    width: 50%;
-    bottom: -170px;
+    width: 60%;
+    bottom: -185px;
     padding-bottom: 0;
     right: -20%;
 }
@@ -600,7 +600,7 @@ textarea {
     content: "";
     position: absolute;
     z-index: 1;
-    top: 25px;
+    top: 22px;
     left: 8px;
     width: 32px;
     height: 32px;
@@ -634,7 +634,7 @@ textarea {
 .input-toggle:before,
 .input-toggle:after {
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     padding: 12px 16px;
     font-size: 12px;
@@ -645,15 +645,14 @@ textarea {
     position: relative;
     display: block;
     bottom: -306px;
-    margin-left: 60px;
+    margin-left: 70px;
     width: 200px;
 }
 
 .buttons {
-    display: block;
     position: relative;
-    bottom: -500px;
-    left: 95%;
+    bottom: -470px;
+    left: 100%;
     width: 200px;
     padding: 30px;
     margin: 0;
@@ -684,99 +683,47 @@ textarea {
     color: white;
 }
 
-
-/*
-
 @media (min-width: 768px) {
     .appname {
-        top: 4%;
-        left: 3%;
-        font-size: 20px;
-    }
-    .userpic {
-        left: 80%;
-    }
-    .username {
-        left: 650px;
-        width: 100px;
+        font-size: 25px;
     }
     #hr {
-        left: 577px;
-    }
-    #noti_Button {
-        left: 73%;
-    }
-    #noti_Counter {
-        left: 73%;
-    }
-    #notifications {
-        left: 550px;
+        right: 100px;
+        top: 26px;
     }
     .messagebar-default {
+        top: 7%;
         width: 50%;
         height: 30px;
         left: 100px;
         font-size: 15px;
     }
     .wrap {
-        top: 169px;
+        top: 147px;
         left: 75%;
     }
-    #myChart {
-        top: 330px;
-        left: 50px;
-        max-height: 100vh;
-        max-width: 90vw;
+    .traffic-navigation {
+        margin-left: 210px;
     }
-    #myLineChart {
-        top: 215px;
-        left: 50px;
-        max-height: 610vh;
-        max-width: 90vw;
+    .socialheading {
+        left: 340px;
     }
-    #myDoughnutChart {
-        top: 1217px;
-        left: 160px;
-        max-height: 90vh;
-        max-width: 58vw;
+    .social-widgets li {
+        width: 30%;
     }
-    .daily {
-        top: 700px;
-    }
-    .mobile {
-        top: 1200px;
+    .new-members {
+        left: 230px;
     }
     .member-data {
         width: 310px;
-        margin-top: 2px;
-        padding-bottom: 4px;
-    }
-    .flex-container {
-        position: absolute;
-        top: 215%;
-        left: 30%;
     }
     .act-flex-container {
-        top: 246%;
         left: 30%;
         width: 320px;
         height: 140px;
     }
-    .act-flex-container .activity-data {
-        width: 90%;
-        border-bottom: 1px solid #DFDFDF;
-    }
-    .member-act {
-        position: absolute;
-        top: 890px;
-        margin-left: 70px;
-    }
-    .activity-arrow {
-        margin-left: 90%;
-        margin-top: -35px;
-    }
     .act-bottom-info {
-        margin-top: 1px;
+        margin-top: 15px;
     }
     .contact-info {
         margin-top: 10px;
@@ -786,20 +733,15 @@ textarea {
         padding: 50px;
         margin-left: -18%;
     }
-    .msguser {
-        font-size: 16px;
-        position: absolute;
-        bottom: -1770px;
-        margin-left: 270px;
-    }
-    .container {
-        bottom: -2060px;
-        width: 500px;
-        left: 100px;
+    .contact-form {
+        bottom: -240px;
     }
     .settings {
-        bottom: -2150px;
+        bottom: -2200px;
         margin-left: 310px;
+    }
+    .settings-container {
+        top: 610px;
     }
     .notitoggle {
         font-size: 13px;
@@ -836,50 +778,34 @@ textarea {
         width: 300px;
     }
     .buttons {
-        top: 330%;
+        bottom: -2430px;
         transform: translate(-10%, -10%);
+        left: 270px;
     }
     .traffic-navigation {
         right: 190px;
         width: 2%;
     }
-    [class^="navicon"] {
-        margin-left: 100px;
-        left: 15px;
-    }
 }
 
 
 /*
+
 @media (min-width: 1024px) {
-    .username {
-        left: 890px;
-        top: 75px;
-        width: 10%
-    }
-    .userpic {
-        left: 840px;
-        width: 34px;
-        height: 35px;
-        margin-top: -53px;
-    }
+    
+
+   
     #hr {
-        left: 790px;
+        left: 500px;
     }
-    #noti_Button {
-        left: 770px;
-        margin-top: -50px;
-        width: 30px;
-        height: 35px;
-    }
-    #noti_Counter {
-        left: 770px;
-    }
+  
+    
+   
     #notifications {
         left: 1004px;
     }
     .appname {
-        font-size: 20px;
+        font-size: 30px;
     }
     #navigation {
         display: flex;
@@ -916,28 +842,15 @@ textarea {
         top: 80px;
         font-size: 15px;
     }
-    #myLineChart {
-        max-height: 80vh;
-        max-width: 80vw;
-        left: 140px;
-    }
-    .traffic {
-        left: 100px;
-    }
-    .daily {
-        left: 100px;
-        top: 800px;
-    }
+  
+ 
     #myChart {
         max-height: 45vh;
         max-width: 45vw;
         left: 130px;
         top: 340px;
     }
-    .mobile {
-        left: 590px;
-        top: 800px;
-    }
+  
     #myDoughnutChart {
         max-height: 25vh;
         max-width: 20vw;
@@ -949,7 +862,7 @@ textarea {
         top: 1100px;
     }
  
-    lex-container {
+    flex-container {
         top: 100%;
         left: 17%;
         width: 31%;
@@ -1017,4 +930,6 @@ textarea {
 
 }
 
-/*
+
+
+*/
