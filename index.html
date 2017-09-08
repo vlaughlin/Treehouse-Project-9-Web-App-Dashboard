@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Web App Dashboard Project</title>
 
@@ -27,15 +27,16 @@
     <header class="header-flex">
 
 
-        <li class="appname">
-            <a href="#"><strong style="font-size: 100%;">Your</strong>App &#8482;</a>
-        </li>
+        <ul class="appname">
+            <li><a href="#"><strong style="font-size: 100%;">Your</strong>App &#8482;</a></li>
+        </ul>
+
+
         <hr id="hr">
 
 
 
-        <div class="right-header-icons">
-
+        <ul class="right-header-icons">
 
             <li id="noti_Container">
                 <div id="noti_Counter">
@@ -80,21 +81,22 @@
                 <a href="aboutus.html">Josh Sullivan</a>
             </li>
 
-        </div>
+        </ul>
 
     </header>
 
 
     <div id="navigation">
+        <ul class="nav-icons">
 
-        <img alt="Dashboard" class="navicon-dashboard" src="icons/icon-dashboard.svg">
+            <li class="navicon"><img alt="Dashboard" src="icons/icon-dashboard.svg"></li>
 
-        <img alt="Members" class="navicon-members" src="icons/icon-members.svg">
+            <li class="navicon"><img alt="Members" src="icons/icon-members.svg"></li>
 
-        <img alt="Visits" class="navicon-visits" src="icons/icon-visits.svg">
+            <li class="navicon"><img alt="Visits" src="icons/icon-visits.svg"></li>
 
-        <img alt="Settings" class="navicon-settings" src="icons/icon-settings.svg">
-
+            <li class="navicon"> <img alt="Settings" src="icons/icon-settings.svg"></li>
+        </ul>
     </div>
 
 
@@ -168,39 +170,39 @@
                 </canvas>
     </div>
 
-        
-<section class="social-container">
-              <h3 class="socialheading">SOCIAL STATS</h3>
-            <ul class="social-widgets">
-              <li>
+
+    <section class="social-container">
+        <h3 class="socialheading">SOCIAL STATS</h3>
+        <ul class="social-widgets">
+            <li>
                 <div class="social-icons">
-                  <img src="icons/icon-twitter.svg" alt="Twitter">
-                    </div>
-                    <span>Twitter</span>
+                    <img src="icons/icon-twitter.svg" alt="Twitter">
+                </div>
+                <span>Twitter</span>
                 <span>10,345</span>
-                  </li>
-                  
-                    
-                
-                
-                  
-             
-              <li>
+            </li>
+
+
+
+
+
+
+            <li>
                 <div class="social-icons">
-                  <img src="icons/icon-facebook.svg" alt="Facebook">
+                    <img src="icons/icon-facebook.svg" alt="Facebook">
                 </div>
-                  <span>Facebook</span>
-                  <span>8,739</span>
-              </li>
-              <li>
+                <span>Facebook</span>
+                <span>8,739</span>
+            </li>
+            <li>
                 <div class="social-icons">
-                  <img src="icons/icon-google-plus.svg" alt="Google">
+                    <img src="icons/icon-google-plus.svg" alt="Google">
                 </div>
-              <span>Google+</span>
-                  <span>2,530</span>
-              </li>
-            </ul>
-          </section>
+                <span>Google+</span>
+                <span>2,530</span>
+            </li>
+        </ul>
+    </section>
 
     <!-- Members Data and Activity -->
 
@@ -335,14 +337,14 @@
             </div>
         </div>
     </div>
-    
-    
-     
+
+
+
     <!-- Message User -->
- 
+
 
     <div class="contact-form">
-    <h3>Message User</h3>
+        <h3>Message User</h3>
         <form class="message-users" id="sendMessage" method="post" name="sendMessage" novalidate="novalidate">
             <input id="search-user" name="search-user" placeholder="Search for User" type="text">
 

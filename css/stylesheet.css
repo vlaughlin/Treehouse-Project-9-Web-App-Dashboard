@@ -190,20 +190,22 @@ a:active {
 }
 
 #navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     height: 50px;
     background-color: #4d4c72;
 }
 
-[class^="navicon"] {
-    width: 30px;
-    height: 30px;
+.nav-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     padding: 0;
-    margin: 0;
-    min-height: 100%;
+    margin-bottom: 0;
+    height: 40%;
+}
+
+.navicon {
+    width: 30px;
 }
 
 .dash {
@@ -788,49 +790,26 @@ textarea {
     }
 }
 
-
-/*
-
 @media (min-width: 1024px) {
-    
-
-   
     #hr {
-        left: 500px;
-    }
-  
-    
-   
-    #notifications {
-        left: 1004px;
+        right: -210px;
     }
     .appname {
         font-size: 30px;
+        margin-right: 600px;
     }
     #navigation {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 0;
-        min-height: 200vh;
-        width: 80px;
+        width: 70px;
+        min-height: 100vh;
     }
-    [class^="navicon"] {
-        display: flex;
-        align-items: flex-start;
-        width: 35px;
-        height: 35px;
-        margin-left: 1%;
-        top: -20px;
-        margin-top: 50%;
-        left: 23%;
+    .nav-icons {
+        flex-direction: column;
     }
     .dash {
         font-size: 18px;
         top: 80px;
         margin-left: 90px;
     }
-   
     .wrap {
         top: 120px;
         left: 79%;
@@ -842,15 +821,17 @@ textarea {
         top: 80px;
         font-size: 15px;
     }
-  
- 
+    #myLineChart {
+        position: absolute;
+        top: 250px;
+    }
+    .traffic {}
     #myChart {
         max-height: 45vh;
         max-width: 45vw;
         left: 130px;
-        top: 340px;
+        top: 140px;
     }
-  
     #myDoughnutChart {
         max-height: 25vh;
         max-width: 20vw;
@@ -861,7 +842,6 @@ textarea {
         left: -200px;
         top: 1100px;
     }
- 
     flex-container {
         top: 100%;
         left: 17%;
@@ -895,41 +875,30 @@ textarea {
         bottom: -250px;
         left: -150px;
         width: 105px;
+        margin-left: -1px;
     }
-    margin-left: -1px;
+    .settings-container {
+        position: relative;
+        top: -1586px;
+        right: -400px;
+        width: 100px;
+    }
+    .notitoggle {
+        width: 200px;
+    }
+    .arrow {
+        margin-left: 50px;
+    }
+    .traffic-navigation ul {
+        position: relative;
+        top: 20px;
+        margin-left: 0;
+        width: 26px;
+    }
+    .buttons {
+        top: 330%;
+    }
+    #send {
+        width: 360px;
+    }
 }
-
-.settings-container {
-    position: relative;
-    top: -1586px;
-    right: -400px;
-    width: 100px;
-}
-
-.notitoggle {
-    width: 200px;
-}
-
-.arrow {
-    margin-left: 50px;
-}
-
-.traffic-navigation ul {
-    margin-left: 0;
-    width: 26%;
-}
-
-.buttons {
-    top: 330%;
-}
-
-#send {
-    width: 360px;
-}
-
-
-}
-
-
-
-*/
