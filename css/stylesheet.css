@@ -52,12 +52,11 @@ li {
 }
 
 #hr {
-    display: flex;
     border-color: #6266bf;
     -webkit-transform: rotate(90deg);
     position: absolute;
     width: 50px;
-    left: 47%;
+    left: 57%;
     top: 5%;
     margin-bottom: -1px;
 }
@@ -695,7 +694,7 @@ textarea {
         font-size: 25px;
     }
     #hr {
-        right: 100px;
+        right: 150px;
         top: 26px;
     }
     .messagebar-default {
@@ -776,13 +775,13 @@ textarea {
     }
     #DropDownTimezone {
         position: absolute;
-        bottom: -2340px;
-        margin-left: 220px;
-        width: 270px;
-    }
-    #send {
-        margin-left: 80px;
-        width: 300px;
+        bottom: -2340px;    margin-left: 220px;
+width: 270px;
+
+}
+#send {
+    margin-left: 80px;
+    width: 300px;
     }
     .buttons {
         bottom: -2430px;
@@ -797,14 +796,18 @@ textarea {
 
 @media (min-width: 1024px) {
     #hr {
-        right: -210px;
+        right: -140px;
     }
     .appname {
         font-size: 30px;
         margin-right: 600px;
     }
     #navigation {
-        position: absolute;
+        position: fixed;
+        align-items: flex-start;
+        top: 0;
+        padding-top: 60px;
+        z-index: -1;
         width: 70px;
         min-height: 100vh;
     }
@@ -816,11 +819,12 @@ textarea {
         top: 80px;
         margin-left: 90px;
     }
-    /*
     .wrap {
         top: 120px;
-        left: 79%;
+        left: 69%;
     }
+    /*
+  
     .messagebar-default {
         width: 50%;
         height: 30px;
