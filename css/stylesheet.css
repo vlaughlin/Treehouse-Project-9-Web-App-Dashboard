@@ -775,13 +775,13 @@ textarea {
     }
     #DropDownTimezone {
         position: absolute;
-        bottom: -2340px;    margin-left: 220px;
-width: 270px;
-
-}
-#send {
-    margin-left: 80px;
-    width: 300px;
+        bottom: -2340px;
+        margin-left: 220px;
+        width: 270px;
+    }
+    #send {
+        margin-left: 80px;
+        width: 300px;
     }
     .buttons {
         bottom: -2430px;
@@ -804,7 +804,6 @@ width: 270px;
     }
     #navigation {
         position: fixed;
-        align-items: flex-start;
         top: 0;
         padding-top: 60px;
         z-index: -1;
@@ -820,39 +819,53 @@ width: 270px;
         margin-left: 90px;
     }
     .wrap {
-        top: 120px;
-        left: 69%;
+        top: 100px;
+        left: 80%;
+    }
+    .messagebar-default {
+        text-align: center;
+        width: 70%;
+        top: 2%;
+        left: 8%;
+    }
+    .traffic-navigation {
+        margin-right: -24%;
+        margin-bottom: -2%;
+    }
+    #myChart {
+        margin-left: -26%;
+        max-height: 45vh;
+        max-width: 45vw;
+    }
+    #myDoughnutChart {
+        max-height: 60vh;
+        max-width: 20vw;
+        margin-top: -25%;
+        margin-right: -60%;
+    }
+    .mobile {
+        position: absolute;
+        margin-right: -100%;
+        top: -250px;
+    }
+    .daily {
+        margin-left: 12%;
+    }
+    .social-widgets {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .social-widgets li {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .socialheading {
+        left: 9%;
     }
     /*
   
-    .messagebar-default {
-        width: 50%;
-        height: 30px;
-        left: 200px;
-        top: 80px;
-        font-size: 15px;
-    }
-    #myLineChart {
-        position: absolute;
-        top: 250px;
-    }
    
-    #myChart {
-        max-height: 45vh;
-        max-width: 45vw;
-        left: 130px;
-        top: 140px;
-    }
-    #myDoughnutChart {
-        max-height: 25vh;
-        max-width: 20vw;
-        left: 710px;
-        top: 830px;
-    }
-    .socialstats {
-        left: -200px;
-        top: 1100px;
-    }
+
     flex-container {
         top: 100%;
         left: 17%;
@@ -900,12 +913,7 @@ width: 270px;
     .arrow {
         margin-left: 50px;
     }
-    .traffic-navigation ul {
-        position: relative;
-        top: 20px;
-        margin-left: 0;
-        width: 26px;
-    }
+   
     .buttons {
         top: 330%;
     }
