@@ -862,31 +862,21 @@ textarea {
     .socialheading {
         left: 9%;
     }
+    .new-members {
+        margin-left: -9%;
+    }
+    .act-flex-container {
+        top: -190px;
+        margin-left: 300px;
+    }
+    .act-flex-container .activity-data {
+        margin-bottom: 10px;
+    }
     /*
   
    
 
-    flex-container {
-        top: 100%;
-        left: 17%;
-        width: 31%;
-    }
-    .bottom-info {
-        padding: 0 18%;
-    }
-    .act-flex-container {
-        top: 100%;
-        left: 60%;
-    }
-    .recentact {
-        top: -30px;
-    }
-    .top-info {
-        width: 10%;
-    }
-    .join-date {
-        margin-right: 10px;
-    }
+
     .container {
         top: 890px;
         left: 10%;
