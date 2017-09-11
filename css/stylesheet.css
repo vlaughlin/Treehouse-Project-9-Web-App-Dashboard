@@ -71,7 +71,7 @@
       background: lightgreen;
       color: #FFF;
       padding: 3px 3px;
-      margin: -6px 0 0 11px;
+      margin: -8px 0 0 13px;
       border-radius: 50%;
       -moz-border-radius: 50%x;
       -webkit-border-radius: 50%;
@@ -810,13 +810,13 @@
       #myDoughnutChart {
           max-height: 60vh;
           max-width: 20vw;
-          margin-top: -25%;
-          margin-right: -60%;
+          margin-top: -300px;
+          margin-right: -740px;
       }
       .mobile {
-          position: absolute;
+          position: relative;
           margin-right: -100%;
-          top: -250px;
+          top: -90px;
       }
       .daily {
           margin-left: 12%;
