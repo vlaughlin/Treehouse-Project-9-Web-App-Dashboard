@@ -451,8 +451,8 @@
                               /*Form*/
                               
                               .contact-form h3 {
-                                  position: relative;
-                                  bottom: 290px;
+                                  position: absolute;
+                                  top: -55px;
                                   text-align: center;
                                   font-size: 16px;
                               }
@@ -853,8 +853,8 @@
                                   }
                                   .contact-form h3 {
                                       display: block;
-                                      top: -320px;
-                                      left: -50px;
+                                      top: -70px;
+                                      left: 100px;
                                   }
                                   #send {
                                       margin-left: 0;
@@ -862,7 +862,7 @@
                                   }
                                   .settings-container {
                                       position: relative;
-                                      top: -160em;
+                                      top: -156em;
                                       left: 450px;
                                       width: 30em;
                                   }
